@@ -1,0 +1,58 @@
+//Cores
+$preto: #080A07;
+$preto-2: #040402;
+$vermelho: #FF001E;
+$cinza-1: #959594;
+$cinza-2: #161817;
+//Fontes
+$fonte-1:'Roboto', sans-serif;
+$fonte-2: 'Montserrat',sans-serif;
+
+
+@function em($pixel,$contexto:16){
+    @return $pixel / $contexto + em;
+}
+
+@mixin tipo-1($size) {
+    font-family: $fonte-1;
+    @if $size == 13 {
+        font-size: em(13);
+        line-height: em(15,13);
+    }@else if $size == 14 {
+         font-size: em(14);
+        line-height: em(23,14);
+    }@else if $size == 16 {
+         font-size: em(16);
+        line-height: em(25,16);
+    }
+}
+
+@mixin tipo-2($size){
+   font-family: $fonte-2;
+   @if $size == 20 {
+        font-size: em(20);
+        line-height: em(25,20);
+    }@else if $size == 36 {
+         font-size: em(36);
+        line-height: em(45,36);
+    }@else if $size == 50 {
+         font-size: em(50);
+        line-height: em(55,50);
+    }
+}
+
+@mixin box-shadow($shadow...){
+    -webkit-box-shadow:$shadow;
+    -moz-box-shadow:$shadow;
+    box-shadow:$shadow;
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

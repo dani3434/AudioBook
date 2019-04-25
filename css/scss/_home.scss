@@ -1,0 +1,116 @@
+
+p{
+    color: white;
+}
+
+//cabeçalho
+
+header{
+  height: 90px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background: $preto;     
+}
+.navega{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+header .logo{
+  margin: 1rem 1rem 1rem 0rem;
+  font-size: 2rem;    
+}
+.menu ul{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;    
+  list-style: none;    
+}
+.menu li{
+  margin: 1rem;
+    a{
+     font-size: $fonte-1;
+      @include tipo-1(16);
+      text-decoration: none;
+      color: white;
+    }
+}
+.menu li a[href^=cadastro]{
+    background: $vermelho;
+    color:$cinza-2; 
+    border-radius: 2px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+.menu a:hover{
+  color: $vermelho; 
+}
+.menu .procurar input{
+    background: $cinza-2;
+    border-radius: 2px;
+    padding: 0.7rem 2rem 0.7rem 1rem;
+    border: none;
+    color: $cinza-1;
+    font-size: 14px;
+} 
+
+.menu button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  .span-procurar{
+    color: $cinza-1;
+    position: absolute;
+    bottom: 31px;
+    right: 50px;  
+ }   
+}
+//intro
+.intro{
+   background: url("../img/intro.jpg") no-repeat center;
+   background-size: cover; 
+   height: 70%;
+   margin-top: 6%;   
+}
+.intro-call{
+    width: 60%;
+    height: 250px;
+    text-align: left;
+    margin-top: 5%;
+    h1{
+      font-size: $fonte-2;
+      @include tipo-2(50);
+      color: white;
+    }
+    p{
+      @include tipo-2(16);
+      margin-top: 1rem;
+      margin-bottom: 1rem;        
+    }
+    a{
+        background: $vermelho;
+        color:$cinza-2; 
+        border-radius: 2px;
+        padding: 0.4rem 0.9rem;
+        font-weight: bold;
+        @include tipo-1(16);
+        font-size: $fonte-1;
+        cursor: pointer; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
