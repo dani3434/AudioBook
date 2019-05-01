@@ -86,7 +86,6 @@ $s-device:480px;
 @mixin container{
     max-width: $l-device;
     margin: 0 auto;
-    position: relative;
     @include d(m){
       max-width: $m-device;    
     }

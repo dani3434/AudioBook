@@ -2,6 +2,8 @@
 @import 'grid';
 @import 'variaveis-e-mixins';
 @import 'home';
+@import 'contos';
+
 
 p{
   @include tipo-1(14);    
@@ -10,7 +12,9 @@ img{
     display: block;
     max-width: 100%;
 }
-
+a{
+  text-decoration: none;
+}
 body{
     background: $preto; 
     height: 500px;

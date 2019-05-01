@@ -35,7 +35,6 @@ header .logo{
 .menu li{
   margin: 0.9rem;
     a{
-     font-size: $fonte-1;
       @include tipo-1(16);
       text-decoration: none;
       color: white;
@@ -53,25 +52,29 @@ header .logo{
 }
 .menu .procurar input{
     background: $cinza-2;
+    @include tipo-1(14);
     border-radius: 2px;
-    padding: 0.7rem 3rem 0.7rem 1rem;
+    padding: 0.6rem 4rem 0.6rem 0.6rem;
     border: none;
     color: $cinza-1;
-    font-size: 14px;
 } 
-
+.menu .procurar{
+  margin-right: 0;
+}
 .menu button{
     background: transparent;
     border: none;
     cursor: pointer;
-  .span-procurar{
-    color: $cinza-1;
+    padding:0;
     position: absolute;
-    bottom: 31px;
-    right: 50px;  
+    right: 4rem;
+    bottom: 1.9rem;
+  i{
+    color: $cinza-1;
+    font-size: 14px;
  }   
 }
-//intro
+//intr
 .intro{
    background: url("../img/intro.jpg") no-repeat center;
    background-size: cover; 
@@ -84,7 +87,6 @@ header .logo{
     text-align: left;
     margin-top: 5%;
     h1{
-      font-size: $fonte-2;
       @include tipo-2(50);
       color: white;
     }
@@ -126,7 +128,7 @@ header .logo{
   flex-wrap: wrap;
   .audios{
     max-width: 20%;
-    padding-right: 1.5rem;
+    margin-right: 1.25rem;
     flex: 1;
     .descricao{
       background: $cinza-2;
@@ -152,7 +154,9 @@ header .logo{
    }
   }
 }
-
+.mais-ouvidos-audios:last-child(1){
+  padding-right: 0;
+}
 .hover-play{
   position: relative;
 }

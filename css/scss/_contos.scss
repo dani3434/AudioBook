@@ -1,0 +1,195 @@
+// Contos
+.logo a{
+  cursor: pointer;
+  margin: 1rem 1rem 1rem 0rem;
+  @include tipo-1(16);
+  color: white; 
+}
+.menu .ativo{
+  color: $vermelho;
+}
+.menu button{
+.span-procurar{
+  bottom: 31px;
+  right: 77px; 
+}   
+}
+.intro-contos{
+  background: url("/img/intro-conto.jpg") no-repeat center;
+  background-size: cover; 
+  height: 70%;
+  margin-top: 6%;
+  h1{
+    text-align: center;
+      @include tipo-2(50);
+      color: white;
+      margin-top: 8rem;
+  }   
+}
+
+//contos section
+.contos-section{
+  .envolve-conto{
+    padding-top: 3rem;
+    h2{
+      @include tipo-1(24);
+      color: white;
+      text-align: center;
+      &::after{
+        content: '';
+        display:block;
+        background: white;
+        width: 2rem;
+        height: 2px;
+        margin: 2px auto;
+      }
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      
+    }
+  }
+}
+
+.envolve-conto .imgs-conto{
+  max-width: 180px;
+}
+.conto-descricao{
+  background: $cinza-2;
+ 
+  h3{
+    @include tipo-1(16);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+  }
+
+  p{
+    @include tipo-1(14);
+    color: $vermelho;
+    text-align: center;
+  }
+
+  hr{
+    color: $preto;
+    margin: 5px 0;
+  }
+}
+
+.curtir{
+  border: none;
+  background: none;
+  color: $vermelho;
+  font-size: 18px;
+  cursor: pointer;
+}
+.play{
+  border: none;
+  background: none;
+  color: $vermelho;
+  font-size: 17px;
+  cursor: pointer; 
+  margin-left:7.4rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+//mais ouvidos
+.mais-ouvidos-contos{
+  background: $preto-2;
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+  h2{
+    padding: 2rem 0;
+    color: white;
+    @include tipo-2(36);
+    font-weight: medium;
+    text-align: center;
+    span{
+      color: $vermelho;
+    }
+  }
+  hr{
+    border-width: 2px;
+    border-color:$cinza-2;
+    height: 400px;
+    margin-top: 0;
+    border-style: solid;
+  }
+}
+
+.flex-mais-ouvidos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .mais-ouvido-img{
+    max-width:33%;
+    border-radius: 2px;
+    margin-left: 6rem;
+  }
+  hr{
+    margin: 0 3rem;
+  } 
+}
+.mais-ouvido-lista{
+  max-width: 40%;
+  li{
+    margin-bottom: 1rem;
+  }
+  .posicao{
+    @include tipo-1(16);
+    color: white;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .img-lista{
+    width: 10%;
+    display: inline-block;
+    margin-bottom: 3%;
+  }
+
+  div + p{
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: 8%;
+    margin-left: 5px;
+    @include tipo-1(16);
+    font-weight: 500;
+  }
+  .autor-mais-ouvidos{
+    color: $vermelho;
+    margin-left: 5px;
+    @include tipo-1(14);
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -105px;
+    margin-bottom: 13px;
+  }
+  .minutos{
+    @include tipo-1(16);
+    color: $cinza-1;
+    display: inline-block;
+    margin-right: 5px;
+    overflow: hidden;
+    margin-bottom: 8%;
+    margin-left: 10px;
+  }
+  .curtidas{
+    @include tipo-1(16);
+    color: $vermelho;
+    display: inline-block;
+    margin-right: 5px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    margin-left: -38px;
+    i{
+      margin-right: 3px;
+    }
+  }
+}

@@ -27,6 +27,9 @@ $fonte-2: 'Montserrat',sans-serif;
     }@else if $size == 20 {
         font-size: em(20);
         line-height: em(30,20);
+    }@else if $size == 24 {
+        font-size: em(24);
+        line-height: em(33,24);
     } 
 }
 
