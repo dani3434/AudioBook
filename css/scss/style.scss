@@ -3,6 +3,7 @@
 @import 'variaveis-e-mixins';
 @import 'home';
 @import 'contos';
+@import 'perfil';
 
 
 p{
@@ -11,6 +12,7 @@ p{
 img{
     display: block;
     max-width: 100%;
+    border-radius: 2px;
 }
 a{
   text-decoration: none;

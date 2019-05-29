@@ -112,13 +112,13 @@
       color: $vermelho;
     }
   }
-  hr{
-    border-width: 2px;
-    border-color:$cinza-2;
-    height: 400px;
-    margin-top: 0;
-    border-style: solid;
-  }
+}
+.separador{
+  border-width: 2px;
+  border-color:$cinza-2;
+  height: 400px;
+  margin-top: 0;
+  border-style: solid;
 }
 
 .flex-mais-ouvidos{
@@ -164,7 +164,6 @@
   }
   .autor-mais-ouvidos{
     color: $vermelho;
-    margin-left: 5px;
     @include tipo-1(14);
     display: inline-block;
     overflow: hidden;
@@ -175,7 +174,6 @@
     @include tipo-1(16);
     color: $cinza-1;
     display: inline-block;
-    margin-right: 5px;
     overflow: hidden;
     margin-bottom: 8%;
     margin-left: 10px;
@@ -187,7 +185,7 @@
     margin-right: 5px;
     overflow: hidden;
     margin-bottom: 12px;
-    margin-left: -38px;
+    margin-left: -42px;
     i{
       margin-right: 3px;
     }

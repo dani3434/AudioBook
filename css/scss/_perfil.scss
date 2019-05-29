@@ -1,0 +1,239 @@
+//Perfil
+.perfil{
+  margin: 0.5rem 0.9rem !important;
+  cursor: pointer;
+}
+.menu .perfil a{
+  display: flex;
+  align-items: center;
+}
+.menu .perfil-img{
+  height: 35px;
+  width: 35px;
+  margin-right: 12px;
+  img{
+    border-radius: 50%;
+  }
+}
+.perfil span{
+  margin-right: 12px;
+}
+//intro-perfil
+.intro-perfil{
+  background-color: #8E8989;
+  height: 70%;
+  margin-top: 6%;
+  position: relative;   
+}
+.intro-perfil:hover .perfil-imagem {
+  opacity: 1;
+}
+.perfil-imagem{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+.mudar-capa{
+  background: $preto;
+  display: flex;
+  width: 175px;
+  padding: 0.7rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  i{
+   margin-right: 10px;
+   font-size: 23px;
+  }
+  span{
+    @include tipo-1(16);
+  }
+}                           
+//Perfil
+.justify-content{
+  justify-content: space-between;
+}
+.info-perfil{
+  position: relative;
+  top: -150px;
+  h1{
+    @include tipo-1(24);
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+.btn-perfil{
+  background: $vermelho;
+  color:$cinza-2; 
+  border-radius: 2px;
+  padding: 0.365rem 0.995rem;
+  font-weight: bold;
+  @include tipo-1(14);
+  font-size: $fonte-1;
+  cursor: pointer;
+  border: none;
+  margin: 15px auto;
+  text-align: center;
+  display: block;
+}
+.img-perfil:hover .mudar-perfil {
+  opacity: 1;
+}
+.img-perfil{
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: #201D1D;
+  overflow: hidden;
+  position: relative;
+  img{
+    margin: 3rem auto;
+  }
+}
+.mudar-perfil{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: transparent;
+}
+.perfil-content{
+  display: flex;
+  width: 175px;
+  padding: 0.7rem;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: $preto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  i{
+   margin-right: 10px;
+   font-size: 23px; 
+  }
+  span{
+    @include tipo-1(16);
+  }
+}
+.sobre-perfil{
+  background: $cinza-2;
+  max-width: 280px;
+  text-align: center;
+  h2{
+    color: white;
+    @include tipo-1(18);
+    padding: 15px 0;
+  }
+}
+.sobre-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p{
+    color: $cinza-1;
+    max-width: 230px;
+    padding: 0px 0 20px 0;
+  }
+  a{
+    align-self: flex-start;
+    color: white;
+    i{
+      font-size: 14px;
+    }
+  }
+  
+}
+// Favoritos
+.favorito-titulo{
+  background: $cinza-2;
+  width: 100%;
+  margin-top: 1rem;
+  h2{
+    color: $vermelho;
+    @include tipo-2(20);
+    padding: 14px 0;
+    text-align: center;
+  }
+}
+.favorito-content{
+  margin: 1rem auto;
+  max-width: 500px;
+  hr{
+    width: 470px;
+    border-color: $cinza-2;
+    margin-bottom: 15px;
+    border-width: 2px;
+  } 
+}
+.favorito-itens{
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  padding: 1rem 0;
+  background: $cinza-2;
+  border-bottom: 2px solid $cinza-2;
+}
+.favorito-header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.7rem;
+}
+.favoritos-titulos{
+  h3{
+    @include tipo-1(16);
+    color: white;
+    font-weight: 600;
+  }
+  span{
+    @include tipo-1(14);
+    color: $vermelho;
+    font-style: italic;   
+  }
+}
+.favorito-time{
+  @include tipo-1(14);
+  color: $cinza-1;
+}
+
+.favorito-descricao-audio p{
+  max-width: 420px;
+}
+.favorito-img{
+  margin-right: 15px;
+}
+.favorito-footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.7rem;
+  color: $vermelho;
+  span{
+    color: $cinza-1;
+  }
+  a{
+  color: $vermelho;
+  }
+}

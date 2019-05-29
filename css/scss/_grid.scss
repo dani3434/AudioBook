@@ -1,6 +1,6 @@
 //Variaveis do grid
 $colu:12;
-$gutter:20px;
+$gutter:15px;
 $l-device:1200px;
 $m-device:760px;
 $s-device:480px;
@@ -102,14 +102,13 @@ $s-device:480px;
 }
 
 @mixin row{
-    margin-left: -10px;
-    margin-right: -10px;
-    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
     @include d(s){
         margin-left: 0px;
         margin-right: 0px;
     }
-    @include clearfix;    
 }
 
 .row{

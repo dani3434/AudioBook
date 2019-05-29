@@ -35,7 +35,10 @@ $fonte-2: 'Montserrat',sans-serif;
 
 @mixin tipo-2($size){
    font-family: $fonte-2;
-   @if $size == 36 {
+   @if $size == 20 {
+    font-size: em(20);
+    line-height: em(30,20);
+   }@else if $size == 36 {
          font-size: em(36);
         line-height: em(45,36);
     }@else if $size == 50 {
