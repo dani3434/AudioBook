@@ -335,7 +335,7 @@ header .logo {
 
 .intro-call a {
   background: #FF001E;
-  color: #161817;
+  color: #040402;
   border-radius: 2px;
   padding: 0.4rem 0.9rem;
   font-weight: bold;
@@ -450,7 +450,7 @@ header .logo {
 
 .btn {
   background: #FF001E;
-  color: #161817;
+  color: #040402;
   border-radius: 2px;
   padding: 0.4rem 0.9rem;
   font-weight: bold;
@@ -1099,6 +1099,94 @@ footer p {
 
 .favorito-footer a {
   color: #FF001E;
+}
+
+.navega-cadastro {
+  text-align: center;
+}
+
+.login {
+  margin-top: 7rem;
+}
+
+.login h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.375em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login h1 span {
+  color: #FF001E;
+}
+
+.login-content {
+  margin-top: 2.5rem;
+}
+
+.login-perfil {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: #201D1D;
+  position: relative;
+  margin: 0 auto;
+}
+
+.login-perfil .login-camera {
+  background: #040402;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+}
+
+.login-perfil .login-camera i {
+  color: white;
+  font-size: 30px;
+  margin: 0.8rem auto;
+}
+
+form {
+  margin-top: 2.5rem;
+}
+
+form input {
+  display: block;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #161817;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5625em;
+}
+
+form button {
+  margin: 0 auto 9rem auto;
+  display: block;
+  color: #040402;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 p {

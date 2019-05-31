@@ -1,0 +1,73 @@
+.navega-cadastro{
+  text-align: center;
+}
+.login{
+  margin-top: 7rem;
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    @include tipo-1(24);
+    font-weight: 600;
+    letter-spacing: 1px;
+    span{
+     color: $vermelho;
+    }
+  }
+}
+.login-content{
+  margin-top: 2.5rem;
+}
+.login-perfil{
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: #201D1D;
+  position: relative;
+  margin: 0 auto;
+  .login-camera{
+    background: $preto-2;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    i{
+      color: white;
+      font-size: 30px;
+      margin: 0.8rem auto;
+    }
+  }
+}
+
+form{
+  margin-top: 2.5rem;
+ input{
+   display: block;
+   margin-bottom: 20px;
+   background: none;
+   border: none;
+   border-bottom: 2px solid $cinza-2;
+   width: 30%;
+   margin-left: auto;
+   margin-right: auto;
+   padding: 10px;
+   color: white;
+   @include tipo-1(16);
+ }
+ button{
+   margin: 0 auto 9rem auto;
+   display: block;
+   color: $preto-2;
+ }
+}
+textarea:focus,
+input:focus,
+select:focus {
+border-color: none !important;
+outline: 0;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
