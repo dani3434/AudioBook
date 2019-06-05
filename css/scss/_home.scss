@@ -13,7 +13,7 @@ header{
   width: 100%;
   z-index: 50;
   background: $preto;
-  box-shadow: 0px 2px 4px rgba(53, 53, 52, 0.25);     
+  box-shadow: 0px 2px 4px rgba(53, 53, 52, 0.25); 
 }
 .navega{
     display: flex;
@@ -131,6 +131,7 @@ header .logo{
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 15px;
+  margin-bottom: 1.9rem;
   .audios{
     max-width: 20%;
     margin-right: 1.25rem;
@@ -198,7 +199,6 @@ header .logo{
   font-size: $fonte-1;
   cursor: pointer;
   border: none;
-  margin-top: 1.9rem; 
 }        
 
 //seção de esclarecimento

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+  <head>
+    <title>Audio Book - Enviar Conto</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">      
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>     
+  </head>
+
+<body>
+
+  <header>
+            
+    <div class="navega-cadastro">
+      <div class="logo">
+       <h1 class="enviar-conto-h1">Preencha os Campos</h1>
+      </div>  
+    </div>
+                   
+  </header>
+
+ <section class="container">
+  <div class="enviar-contos-content">
+    <div class="enviar-contos-send-img">
+      <h2>*Enviar imagens com o mesmo tamanho, ideal 600 x 600.</h2>
+  
+      <div class="enviar-contos-img">
+        <a href="#">
+           <i class="fas fa-camera"></i>
+           <span>Envie a Imagem do Seu Audiolivro</span>        
+        </a>
+      </div>     
+    </div>
+
+    <hr>
+
+    <form class="enviar-contos-inputs">
+        <div class="container-inputs">
+          <div class="form-grup">
+              <label>Nome</label>
+              <input type="text" placeholder="Author do seu audiolivro" required>
+          </div>
+          <div class="form-grup">
+            <label>Narrador</label>
+            <input type="text" placeholder="Nome do narrador" required>
+          </div> 
+        </div>
+
+        <div class="form-grup">
+          <label>Envie Seu Áudio</label>
+          <input type="file" required>
+        </div> 
+
+        <div class="form-grup">
+          <label>Gênero</label>
+            <select required>
+              <option>Terror</option>
+              <option>Suspense</option>
+              <option>Romance</option>
+              <option>Ficção</option>
+            </select>
+        </div>
+        
+        <div class="form-grup">
+          <label>Tags</label>
+          <input type="text" placeholder="Coloque Tags com o tema do seu audio ex: terro,suspense" required>
+        </div>
+        
+        <div class="form-grup">
+          <label>Texto do Seu Audio</label>
+          <textarea placeholder="Letra do seu Áudio" required></textarea>
+        </div>
+    </form>
+
+  </div>
+  <div class="botoes">
+    <div>
+      <button class="btn-enviar-conto">Cancelar</button>
+      <button class="btn">Enviar</button>
+    </div>
+  </div>
+ </section>
+
+
+</body>
+</html>
