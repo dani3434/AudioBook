@@ -1186,7 +1186,7 @@ footer p {
 
 textarea:focus,
 input:focus,
-select:focus {
+select:focus, button:focus {
   border-color: none !important;
   outline: 0;
   -webkit-box-shadow: none !important;
@@ -1623,6 +1623,117 @@ select:focus {
   color: #DBD6D6;
   margin-bottom: 20px;
   max-width: 905px;
+}
+
+.comentario-quantidade {
+  margin: 20px auto;
+  max-width: 905px;
+  color: #959594;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5625em;
+}
+
+.comentario-quantidade i {
+  font-size: 24px;
+}
+
+.comentario-quantidade span {
+  margin: 0 0px 0 5px;
+  font-weight: 600;
+}
+
+.deixar-comentario {
+  margin: 20px auto 35px auto;
+  max-width: 905px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.deixar-comentario input {
+  display: block;
+  background: #201D1D;
+  width: 85%;
+  border: none;
+  border-radius: 2px;
+  padding: 0.475rem 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875em;
+  line-height: 1.64286em;
+  color: #959594;
+}
+
+.deixar-comentario div {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.deixar-comentario button {
+  margin-left: 10px;
+}
+
+.comentairo-content {
+  margin: 0px auto 35px auto;
+  max-width: 905px;
+}
+
+.comentario-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.comentario-item .perfil-img {
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.comentario-item button {
+  background: none;
+  border: none;
+  color: #959594;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8125em;
+  line-height: 1.15385em;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 5px;
+}
+
+.comentario-item-titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.comentario-item-titulo h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5625em;
+  color: #FF001E;
+  margin-right: 5px;
+}
+
+.comentario-item-titulo span {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8125em;
+  line-height: 1.15385em;
+  color: #959594;
 }
 
 p {
