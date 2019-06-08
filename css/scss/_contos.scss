@@ -47,9 +47,7 @@
     ul{
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
       margin-top: 2rem;
-      
     }
   }
 }
@@ -74,7 +72,7 @@
   }
 
   hr{
-    color: $preto;
+    border-color: $preto;
     margin: 5px 0;
   }
 }
@@ -116,7 +114,7 @@
 .separador{
   border-width: 2px;
   border-color:$cinza-2;
-  height: 400px;
+  height: 395px;
   margin-top: 0;
   border-style: solid;
 }
@@ -126,68 +124,62 @@
   justify-content: center;
   flex-wrap: wrap;
   .mais-ouvido-img{
-    max-width:33%;
+    height: 400px;
+    width: 400px;
     border-radius: 2px;
-    margin-left: 6rem;
   }
   hr{
     margin: 0 3rem;
   } 
 }
 .mais-ouvido-lista{
-  max-width: 40%;
+  margin-right: 8.5rem;
   li{
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+  li:last-child{
+    margin-bottom: 0;
   }
   .posicao{
-    @include tipo-1(16);
+    display: flex;
     color: white;
-    display: inline-block;
-    margin-right: 10px;
-    overflow: hidden;
-    margin-bottom: 30px;
+    align-items: center;
   }
-
+  .mais-ouvidos-info{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+  }
+  .mais-ouvidos-titulo-e-minutos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p{
+      margin-right: 10px;
+    }
+  }
   .img-lista{
-    width: 10%;
-    display: inline-block;
-    margin-bottom: 3%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
   }
 
-  div + p{
-    display: inline-block;
-    overflow: hidden;
-    margin-bottom: 8%;
-    margin-left: 5px;
-    @include tipo-1(16);
-    font-weight: 500;
-  }
   .autor-mais-ouvidos{
     color: $vermelho;
     @include tipo-1(14);
-    display: inline-block;
-    overflow: hidden;
-    margin-left: -105px;
-    margin-bottom: 13px;
+    
   }
   .minutos{
     @include tipo-1(16);
     color: $cinza-1;
-    display: inline-block;
-    overflow: hidden;
-    margin-bottom: 8%;
-    margin-left: 10px;
+   
   }
   .curtidas{
     @include tipo-1(16);
     color: $vermelho;
-    display: inline-block;
-    margin-right: 5px;
-    overflow: hidden;
-    margin-bottom: 12px;
-    margin-left: -42px;
+  
     i{
-      margin-right: 3px;
+      margin-right: 5px;
     }
   }
 }

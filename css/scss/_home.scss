@@ -18,7 +18,6 @@ header{
 .navega{
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     align-items: center;
     margin: 0 15px;
 }
@@ -39,11 +38,12 @@ header .logo{
       @include tipo-1(16);
       text-decoration: none;
       color: white;
+      font-weight: 500;
     }
 }
 .menu li a[href^=cadastro]{
     background: $vermelho;
-    color:$cinza-2; 
+    color:$preto-2; 
     border-radius: 2px;
     padding: 0.5rem 1rem;
     font-weight: bold;
@@ -129,7 +129,6 @@ header .logo{
 .mais-ouvidos-audios{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0 15px;
   margin-bottom: 1.9rem;
   .audios{
