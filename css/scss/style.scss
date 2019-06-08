@@ -7,6 +7,7 @@
 @import 'cadastro';
 @import 'enviar-conto';
 @import 'audio-info';
+@import 'login';
 
 
 
@@ -26,3 +27,12 @@ body{
     background: $preto; 
     height: 500px;
 }
+
+textarea:focus,input:focus,select:focus,button:focus {
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+   }
+
+  

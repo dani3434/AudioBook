@@ -1109,11 +1109,11 @@ footer p {
   text-align: center;
 }
 
-.login {
-  margin-top: 7rem;
+.cadastro {
+  margin: 7rem 0;
 }
 
-.login h1 {
+.cadastro h1 {
   text-align: center;
   text-transform: uppercase;
   color: white;
@@ -1124,51 +1124,52 @@ footer p {
   letter-spacing: 1px;
 }
 
-.login h1 span {
+.cadastro h1 span {
   color: #FF001E;
 }
 
-.login-content {
+.cadastro-content {
   margin-top: 2.5rem;
 }
 
-.login-perfil {
-  width: 280px;
-  height: 280px;
-  border-radius: 50%;
-  background: #201D1D;
-  position: relative;
-  margin: 0 auto;
+.cadastro-content button {
+  margin: 0 auto 3.1rem auto;
+  display: block;
+  color: #040402;
 }
 
-.login-perfil .login-camera {
-  background: #040402;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
+.cadastro-content .h2-cadastro {
   text-align: center;
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
-}
-
-.login-perfil .login-camera i {
   color: white;
-  font-size: 30px;
-  margin: 0.8rem auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5625em;
+  letter-spacing: 1px;
 }
 
-.cadastro-input {
-  margin-top: 2.5rem;
+.cadastro-content .h2-cadastro a {
+  color: #FF001E;
 }
 
-.cadastro-input input {
+.cadastro-content .cadastro-icone {
+  width: 9%;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.cadastro-content .cadastro-input {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2.8rem;
+}
+
+.cadastro-content .cadastro-input input {
   display: block;
   margin-bottom: 20px;
   background: none;
   border: none;
   border-bottom: 2px solid #161817;
-  width: 30%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -1178,19 +1179,27 @@ footer p {
   line-height: 1.5625em;
 }
 
-.cadastro-input button {
-  margin: 0 auto 9rem auto;
-  display: block;
-  color: #040402;
-}
-
-textarea:focus,
-input:focus,
-select:focus, button:focus {
+.cadastro-content textarea:focus, .cadastro-content input:focus, .cadastro-content select:focus, .cadastro-content button:focus {
   border-color: none !important;
   outline: 0;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
+}
+
+.form-senha {
+  position: relative;
+}
+
+.form-senha button {
+  background: none;
+  border: none;
+  color: #959594;
+  font-size: 18px;
+  margin: 0;
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 0px;
 }
 
 .enviar-conto-h1 {
@@ -1736,6 +1745,115 @@ select:focus, button:focus {
   color: #959594;
 }
 
+.navega-login {
+  text-align: center;
+}
+
+.login {
+  margin: 7rem 0;
+}
+
+.login h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5em;
+  line-height: 1.375em;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.login h1 span {
+  color: #FF001E;
+}
+
+.login-content {
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  max-width: 500px;
+}
+
+.login-content button {
+  margin: 0 auto 1.9rem auto;
+  display: block;
+  color: #040402;
+}
+
+.login-content .h2-cadastro {
+  text-align: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5625em;
+  letter-spacing: 1px;
+}
+
+.login-content .h2-cadastro a {
+  color: #FF001E;
+  font-weight: normal;
+}
+
+.login-content hr {
+  border-color: #959594;
+  border-width: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.login-content a {
+  text-align: center;
+  display: block;
+  color: #959594;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5625em;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.login-icone {
+  width: 9%;
+  margin: 2.5rem auto;
+}
+
+.login-input {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2.8rem;
+}
+
+.login-input input {
+  display: block;
+  margin-bottom: 20px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #959594;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  line-height: 1.5625em;
+}
+
+.form-senha {
+  position: relative;
+}
+
+.form-senha button {
+  background: none;
+  border: none;
+  color: #959594;
+  font-size: 18px;
+  margin: 0;
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 0px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 0.875em;
@@ -1755,4 +1873,11 @@ a {
 body {
   background: #080A07;
   height: 500px;
+}
+
+textarea:focus, input:focus, select:focus, button:focus {
+  border-color: none !important;
+  outline: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
 }

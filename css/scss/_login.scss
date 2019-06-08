@@ -1,7 +1,8 @@
-.navega-cadastro{
+.navega-login{
   text-align: center;
 }
-.cadastro{
+
+.login{
   margin: 7rem 0;
   h1{
     text-align: center;
@@ -15,10 +16,13 @@
     }
   }
 }
-.cadastro-content{
+
+.login-content{
+  margin: 0 auto;
   margin-top: 2.5rem;
+  max-width: 500px;
   button{
-    margin: 0 auto 3.1rem auto;
+    margin: 0 auto 1.9rem auto;
     display: block;
     color: $preto-2;
   }
@@ -29,15 +33,30 @@
     letter-spacing: 1px;
     a{
      color: $vermelho;
+     font-weight: normal;
+    }
+  }
+  hr{
+    border-color: $cinza-1;
+    border-width: 1px;
+    margin-bottom: 1.5rem;
   }
 }
-.cadastro-icone{
-  width: 9%;
-  margin: 0 auto;
-  margin-bottom: 2.5rem;
+.login-content a{
+ text-align: center;
+ display: block;
+ color: $cinza-1;
+ @include tipo-1(16);
+ font-weight: 600;
+ margin-bottom: 1.5rem;
 }
 
-.cadastro-input{
+.login-icone{
+  width: 9%;
+  margin: 2.5rem auto;
+}
+
+.login-input{
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 2.8rem;  
@@ -46,20 +65,13 @@
    margin-bottom: 20px;
    background: none;
    border: none;
-   border-bottom: 2px solid $cinza-2;
+   border-bottom: 2px solid $cinza-1;
    width: 100%;
    margin-left: auto;
    margin-right: auto;
    padding: 10px;
    color: white;
    @include tipo-1(16);
- }
-}
-textarea:focus,input:focus,select:focus,button:focus {
-border-color: none !important;
-outline: 0;
--webkit-box-shadow: none !important;
-box-shadow: none !important;
  }
 }
 
