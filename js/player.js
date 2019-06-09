@@ -57,9 +57,7 @@ var songList = [
 
             onMove: function(e, percentage) {
                 percentage=  percentage==100? percentage=1 : 
-             song.volume = parseFloat('0.'+Math.floor(percentage));
-
-             console.log(percentage)
+                song.volume = parseFloat('0.'+Math.floor(percentage));
               }
           })
 
