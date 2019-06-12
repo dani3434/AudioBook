@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet" type="text/css"/>     
+    <link href="css/rangeslider.min.css" rel="stylesheet" type="text/css"/>     
+
   </head>
 
 <body>
@@ -55,47 +57,45 @@
 
       <div class="audio-info-titulos">
         <div class="audio-info-titulo">
-          <h1>Call of Cthulhu</h1>
+           <!-- class titulo-conto alterar titulo para nome do audio-->
+          <h1 class="titulo-conto">Call of Cthulhu</h1>
           <h2>H.P Lovecraft</h2>
         </div>
         <span>Há 2 horas</span>
       </div>
 
-      <img class="audio-info-img" src="/img/img-secao.jpg" alt="img do áudio">
+      <img class="audio-info-img" src="./img/img-secao.jpg" alt="img do áudio">
 
       <div class="audio-info-player">
 
         <button class="play-btn">
-          <i class="fas fa-play"></i>          
+          <!-- pla-pause alter icones quando usuario clica no botao -->
+          <i class="fas fa-play play-pause"></i>          
         </button>
 
         <div class="player-minutos-1">
-          <span>3:55</span>
+          <!-- estar class calcula minutos percorridos -->
+          <span class="TempoCorrido">00:00</span>
         </div>
           
         <div class="player-lines">
-          <div class="linha-1">
-            <div class="linha-2">
-                <div class="linha-3"></div> 
-            </div>            
-          </div>
-          
+          <!-- div contem Barra de progresso! da musica  -->
+          <div class="progressBar"></div>
         </div>
           
         <div class="player-minutos-2">
-          <span>6:00</span>
+
+          <!-- estar class diz total de minutos do audio -->
+          <span class="duracaoDoAudio">00:00</span>
         </div>
 
         <div class="player-volume">
           <button>
-            <i class="fas fa-volume-down"></i>              
+              <!-- class icone-volume altera icons do volume,  quando volume fica mudo  -->
+            <i class="fas fa-volume-down icone-volume"></i>              
           </button>
           <div class="volume-lines">
-            <div class="volume-linha-1">
-            <div class="volume-linha-2">
-                <div class="volume-linha-3"></div> 
-            </div>         
-            </div>
+            <div class="volumeProgreso"></div>
           </div>
         </div>
         
@@ -225,5 +225,14 @@
   <footer>
     <p>Todos os direitos reservados - 2019</p>
   </footer>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/rangeslider.min.js"></script>
+<script src="js/player.js"></script>
+  
+
+
 </body>
 </html>
