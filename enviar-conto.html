@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">      
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>     
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>   
+    <link href="css/Animation.css" rel="stylesheet" type="text/css"/>   
   </head>
 
 <body>
@@ -63,11 +66,13 @@
               <option>Ficção</option>
             </select>
         </div>
-        
+     
         <div class="form-grup">
           <label>Tags</label>
-          <input type="text" placeholder="Coloque Tags com o tema do seu audio ex: terro,suspense" required>
+          <div class="chips-autocomplete">
+           </div>
         </div>
+        
         
         <div class="form-grup">
           <label>Texto do Seu Audio</label>
@@ -84,7 +89,8 @@
     
   </div>
  </section>
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/config.js"></script>          
 
 </body>
 </html>

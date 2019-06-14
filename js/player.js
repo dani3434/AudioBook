@@ -23,7 +23,7 @@ var songList = [
         
 
 
-
+ 
         var MusicProgress = new RangeSlider($(".progressBar"), {
             percentage: 0,
             pollLimit: 6,
