@@ -1367,6 +1367,10 @@ footer p {
   cursor: pointer;
 }
 
+.chips-autocomplete {
+  border: none;
+}
+
 .audio-info-content {
   padding-top: 8.1rem;
 }
