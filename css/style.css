@@ -153,7 +153,7 @@ table {
   margin-left: calc(100% + 7.5px);
 }
 
-@media screen and (max-width: 760px - 1) {
+@media screen and (max-width: 759px) {
   .offset-1, .offset-2, .offset-3, .offset-4, .offset-5, .offset-6, .offset-7, .offset-8, .offset-9, .offset-10, .offset-11, .offset-12 {
     margin-left: 0;
   }
@@ -170,9 +170,9 @@ table {
   }
 }
 
-@media screen and (max-width: 760px - 1) {
+@media screen and (max-width: 759px) {
   .container {
-    max-width: 480px;
+    max-width: 759px;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -192,7 +192,7 @@ table {
   display: flex;
 }
 
-@media screen and (max-width: 760px - 1) {
+@media screen and (max-width: 759px) {
   .row {
     margin-left: 0px;
     margin-right: 0px;
@@ -231,6 +231,29 @@ header {
 header .logo {
   margin: 1rem 1rem 1rem 0rem;
   font-size: 2rem;
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
+}
+
+@media screen and (max-width: 759px) {
+  header .logo {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .menu {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    display: none;
+  }
 }
 
 .menu ul {
@@ -271,7 +294,7 @@ header .logo {
   font-weight: 600;
 }
 
-.menu .procurar input {
+.procurar input {
   background: #161817;
   font-family: "Roboto", sans-serif;
   font-size: 0.875em;
@@ -282,12 +305,39 @@ header .logo {
   color: #959594;
 }
 
-.menu .procurar {
+.procurar {
   margin-right: 0;
   position: relative;
 }
 
-.menu button {
+@media screen and (max-width: 759px) {
+  .input-field {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    display: none;
+  }
+}
+
+.procurar-mobile {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 759px) {
+  .procurar-mobile {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    display: block;
+  }
+}
+
+.input-field button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -297,9 +347,24 @@ header .logo {
   bottom: 0.8rem;
 }
 
-.menu button i {
+.input-field button i {
   color: #959594;
   font-size: 14px;
+}
+
+.menu-mobile {
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+@media screen and (max-width: 759px) {
+  .menu-mobile {
+    display: block;
+  }
 }
 
 .intro {

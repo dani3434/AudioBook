@@ -13,8 +13,10 @@ header{
   width: 100%;
   z-index: 50;
   background: $preto;
-  box-shadow: 0px 2px 4px rgba(53, 53, 52, 0.25); 
+  box-shadow: 0px 2px 4px rgba(53, 53, 52, 0.25);
+  
 }
+
 .navega{
     display: flex;
     justify-content: space-between;
@@ -23,7 +25,18 @@ header{
 }
 header .logo{
   margin: 1rem 1rem 1rem 0rem;
-  font-size: 2rem;    
+  font-size: 2rem;
+  flex-grow: 2;
+  @include d(s){
+    order: 2;   
+    flex-grow: 0;
+  }
+}
+.menu{
+  @include d(s){
+    order: 1;
+    display: none;    
+  }
 }
 .menu ul{
   display: flex;
@@ -52,7 +65,7 @@ header .logo{
   color: $vermelho; 
   font-weight: 600;
 }
-.menu .procurar input{
+.procurar input{
     background: $cinza-2;
     @include tipo-1(14);
     border-radius: 2px;
@@ -60,11 +73,29 @@ header .logo{
     border: none;
     color: $cinza-1;
 } 
-.menu .procurar{
+.procurar{
   margin-right: 0;
   position: relative;
 }
-.menu button{
+.input-field{
+  @include d(s){
+    order: 3;
+    display: none;    
+  }
+}
+.procurar-mobile{
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size:20px;    
+  @include d(s){
+    order: 3;
+    display: block;    
+  }
+}
+.input-field button{
     background: transparent;
     border: none;
     cursor: pointer;
@@ -76,6 +107,18 @@ header .logo{
     color: $cinza-1;
     font-size: 14px;
  }   
+}
+//Menu Mobile
+.menu-mobile{
+  display: none;
+  color: white;
+  font-size:30px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  @include d(s){
+   display: block;
+  }
 }
 //intr
 .intro{

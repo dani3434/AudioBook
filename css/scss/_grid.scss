@@ -3,7 +3,7 @@ $colu:12;
 $gutter:15px;
 $l-device:1200px;
 $m-device:760px;
-$s-device:480px;
+$s-device:759px;
 //Box-sizing
 *, *::after,*::before{
     box-sizing: border-box;
@@ -19,7 +19,7 @@ $s-device:480px;
             @content;
         }
     }@else if $size == s{
-      @media screen and  (max-width:#{$m-device} - 1){
+      @media screen and  (max-width:$s-device){
         @content;
        }
      }
