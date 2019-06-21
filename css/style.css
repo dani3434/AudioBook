@@ -215,6 +215,12 @@ header {
   box-shadow: 0px 2px 4px rgba(53, 53, 52, 0.25);
 }
 
+@media screen and (max-width: 759px) {
+  header {
+    height: 70px;
+  }
+}
+
 .navega {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -252,7 +258,57 @@ header .logo {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 495px);
+    background: #040402;
+    top: 70px;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     display: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-animation: show-down .3s forwards;
+    animation: show-down .3s forwards;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .menu.active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .menu.procurar-mobile {
+    top: 135px;
+  }
+}
+
+@-webkit-keyframes show {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, -30px, 0);
+    transform: translate3d(0px, -30px, 0);
+  }
+  do {
+    opacity: 1;
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, -30px, 0);
+    transform: translate3d(0px, -30px, 0);
+  }
+  do {
+    opacity: 1;
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
   }
 }
 
@@ -268,8 +324,24 @@ header .logo {
   list-style: none;
 }
 
+@media screen and (max-width: 759px) {
+  .menu ul {
+    display: block;
+    width: 100%;
+    margin-left: 15px;
+  }
+}
+
 .menu li {
   margin: 0.9rem;
+}
+
+@media screen and (max-width: 759px) {
+  .menu li {
+    border-bottom: 2px solid #959594;
+    padding: 0.7rem 0;
+    margin: 0;
+  }
 }
 
 .menu li a {
@@ -279,6 +351,19 @@ header .logo {
   text-decoration: none;
   color: white;
   font-weight: 500;
+}
+
+@media screen and (max-width: 759px) {
+  .menu li:last-child {
+    border-bottom: none;
+    padding: 1.2rem 0;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .menu li:first-child {
+    border-top: 2px solid #959594;
+  }
 }
 
 .menu li a[href^=cadastro] {
@@ -305,17 +390,49 @@ header .logo {
   color: #959594;
 }
 
+@media screen and (max-width: 759px) {
+  .procurar input {
+    padding: 0.9rem 4rem 0.9rem  3.3rem;
+    width: 100%;
+  }
+}
+
 .procurar {
   margin-right: 0;
   position: relative;
+  display: block;
 }
 
 @media screen and (max-width: 759px) {
-  .input-field {
+  .procurar {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
     display: none;
+    position: absolute;
+    background: #161817;
+    top: 70px;
+    left: -25px;
+    width: 105%;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-animation: show-down .3s forwards;
+    animation: show-down .3s forwards;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.25em;
+    line-height: 1.5em;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .procurar.active {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .input-field {
+    width: 103%;
   }
 }
 
@@ -324,7 +441,7 @@ header .logo {
   background: transparent;
   border: none;
   cursor: pointer;
-  color: white;
+  color: #959594;
   font-size: 20px;
 }
 
@@ -337,7 +454,7 @@ header .logo {
   }
 }
 
-.input-field button {
+.procurar button {
   background: transparent;
   border: none;
   cursor: pointer;
@@ -347,14 +464,27 @@ header .logo {
   bottom: 0.8rem;
 }
 
-.input-field button i {
+@media screen and (max-width: 759px) {
+  .procurar button {
+    top: 0.8rem;
+    left: 91%;
+  }
+}
+
+.procurar button i {
   color: #959594;
   font-size: 14px;
 }
 
+@media screen and (max-width: 759px) {
+  .procurar button i {
+    font-size: 18px;
+  }
+}
+
 .menu-mobile {
   display: none;
-  color: white;
+  color: #959594;
   font-size: 30px;
   cursor: pointer;
   background: transparent;
@@ -365,6 +495,14 @@ header .logo {
   .menu-mobile {
     display: block;
   }
+}
+
+.menu-mobile i:first-child.active {
+  display: none;
+}
+
+.menu-mobile i:last-child.active {
+  display: block;
 }
 
 .intro {
@@ -835,6 +973,14 @@ footer p {
 .perfil {
   margin: 0.5rem 0.9rem !important;
   cursor: pointer;
+}
+
+@media screen and (max-width: 759px) {
+  .perfil:last-child {
+    border-bottom: none;
+    padding: 0 !important;
+    margin: 0.9rem 0rem !important;
+  }
 }
 
 .menu .perfil a {

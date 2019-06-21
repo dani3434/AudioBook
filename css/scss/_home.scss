@@ -14,7 +14,9 @@ header{
   z-index: 50;
   background: $preto;
   box-shadow: 0px 2px 4px rgba(53, 53, 52, 0.25);
-  
+  @include d(s){
+    height: 70px;
+  }
 }
 
 .navega{
@@ -35,7 +37,38 @@ header .logo{
 .menu{
   @include d(s){
     order: 1;
-    display: none;    
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 495px);
+    background: $preto-2;
+    top: 70px;
+    left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: none;
+    transition: .3s;
+    animation: show-down .3s forwards;  
+  }
+}
+.menu.active{
+  @include d(s){
+    display: block; 
+  }
+}
+.menu.procurar-mobile{
+  @include d(s){
+    top: 135px;
+  }
+}
+
+@keyframes show{
+  from{
+    opacity: 0;
+    transform: translate3d(0px,-30px,0);
+  }
+  do{
+    opacity: 1;
+    transform: translate3d(0px,0,0);
   }
 }
 .menu ul{
@@ -43,16 +76,37 @@ header .logo{
   align-items: center;
   padding: 0;
   margin: 0;    
-  list-style: none;    
+  list-style: none;
+  @include d(s){
+    display: block;
+    width: 100%;
+    margin-left: 15px;
+  }    
 }
 .menu li{
   margin: 0.9rem;
+  @include d(s){
+    border-bottom: 2px solid $cinza-1;
+    padding: 0.7rem 0;
+    margin: 0;
+   }
     a{
       @include tipo-1(16);
       text-decoration: none;
       color: white;
       font-weight: 500;
     }
+}
+.menu li:last-child{
+  @include d(s){
+   border-bottom: none;
+   padding: 1.2rem 0;   
+  }  
+}
+.menu li:first-child{
+  @include d(s){
+  border-top: 2px solid $cinza-1;
+  }
 }
 .menu li a[href^=cadastro]{
     background: $vermelho;
@@ -72,15 +126,36 @@ header .logo{
     padding: 0.6rem 4rem 0.6rem 0.6rem;
     border: none;
     color: $cinza-1;
+    @include d(s){
+    padding: 0.9rem 4rem 0.9rem  3.3rem;
+    width: 100%;     
+    }
 } 
 .procurar{
   margin-right: 0;
   position: relative;
+  display: block;  
+  @include d(s){
+    order: 3;
+    display: none;
+    position: absolute;
+    background: $cinza-2;
+    top: 70px;
+    left: -25px;
+    width: 105%;
+    transition: .3s;
+    animation: show-down .3s forwards;
+    @include tipo-1(20);
+  }
+}
+.procurar.active{
+  @include d(s){
+   display: block;
+  }
 }
 .input-field{
   @include d(s){
-    order: 3;
-    display: none;    
+    width: 103%;
   }
 }
 .procurar-mobile{
@@ -88,14 +163,14 @@ header .logo{
   background: transparent;
   border: none;
   cursor: pointer;
-  color: white;
+  color: $cinza-1;
   font-size:20px;    
   @include d(s){
     order: 3;
     display: block;    
   }
 }
-.input-field button{
+.procurar button{
     background: transparent;
     border: none;
     cursor: pointer;
@@ -103,15 +178,22 @@ header .logo{
     position: absolute;
     right: 0.55rem;
     bottom: 0.8rem;
+  @include d(s){
+    top: 0.8rem;
+    left: 91%
+  }
   i{
     color: $cinza-1;
     font-size: 14px;
+   @include d(s){
+    font-size: 18px;     
+   }
  }   
 }
 //Menu Mobile
 .menu-mobile{
   display: none;
-  color: white;
+  color: $cinza-1;
   font-size:30px;
   cursor: pointer;
   background: transparent;
@@ -119,6 +201,12 @@ header .logo{
   @include d(s){
    display: block;
   }
+}
+.menu-mobile i:first-child.active{
+  display: none; 
+}
+.menu-mobile i:last-child.active{
+  display: block;
 }
 //intr
 .intro{

@@ -25,22 +25,33 @@
 
            <nav class="menu">
              <ul>
-               <li><a href="contos.html" class="ativo">Contos</a></li>
+               <li><a href="contos.html">Contos</a></li>
                <li><a href="perfil.html">Login</a></li> 
                <li><a href="cadastro.html">Cadastrar</a></li>
-               <li class="procurar">
-                 <input type="text" placeholder="Buscar escritores" >
-                 <button type="submit">
-                  <i class="fas fa-search"></i>
-                 </button>    
-               </li>  
              </ul>
-           </nav>  
+           </nav>
+
+           <button class="menu-mobile">
+             <i class="fas fa-bars"></i>
+           </button>
+
+          
+             <div class="procurar">
+              <div class="input-field ">
+                  <input type="text" id="autocomplete-input" class="autocomplete" placeholder="Buscar escritores" >
+              </div>  
+              <button type="submit">
+               <i class="fas fa-search"></i>
+             </button>  
+           </div>
+           <button type="submit" class="procurar-mobile">
+             <i class="fas fa-search"></i>
+           </button>    
      </div>
     
     </div>    
        
-   </header>  
+   </header>
 
    <section class="intro-contos">
     <div class="container">
@@ -617,6 +628,6 @@ window.addEventListener('load', function(){
 
  
 </script>
-
+<script type="module" src="js/config.js"></script>
 </body>
 </html>

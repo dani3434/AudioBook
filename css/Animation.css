@@ -33,6 +33,7 @@ ul:not(.browser-default) > li {
           transform-origin: 0 0;
 }
 
+
 .dropdown-content:focus {
   outline: 0;
 }
@@ -43,9 +44,16 @@ ul:not(.browser-default) > li {
   cursor: pointer;
   min-height: 50px;
   line-height: 1.5rem;
-  width: 100%;
+  width: 95%;
   margin: 0.9rem 0rem 0rem 0;
   border-bottom: 2px solid #959594;
+  margin-left: 0.6rem;
+}
+@media screen and (max-width: 759px) {
+  .dropdown-content li {
+    margin-left: 3.1rem;
+    width: 86%;
+  }
 }
 .dropdown-content li:last-child{
   border: none;
@@ -197,7 +205,7 @@ body.keyboard-focused .select-dropdown.dropdown-content li:focus {
 .autocomplete-content li img {
   height: 35px;
   width: 35px;
-  margin: 5px 15px 5px 9px;
+  margin: 5px 15px 5px 0px;
 }
 .prefix ~ .chips {
   margin-left: 3rem;

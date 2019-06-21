@@ -2,6 +2,13 @@
 .perfil{
   margin: 0.5rem 0.9rem !important;
   cursor: pointer;
+  &:last-child{
+    @include d(s){
+     border-bottom: none;
+     padding: 0 !important;
+     margin: 0.9rem 0rem !important;  
+    }  
+  }
 }
 .menu .perfil a{
   display: flex;
