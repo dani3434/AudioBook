@@ -799,6 +799,7 @@ footer p {
 
 .conto-descricao {
   background: #161817;
+  max-width: 180px;
 }
 
 .conto-descricao h3 {

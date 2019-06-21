@@ -53,12 +53,13 @@
   }
 }
 
+
 .envolve-conto .imgs-conto{
   max-width: 180px;
 }
 .conto-descricao{
   background: $cinza-2;
- 
+  max-width: 180px;  
   h3{
     @include tipo-1(16);
     color: white;
