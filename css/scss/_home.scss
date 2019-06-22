@@ -39,7 +39,7 @@ header .logo{
     order: 1;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 495px);
+    height: calc(100vh - 480px);
     background: $preto-2;
     top: 70px;
     left: 0;
@@ -115,9 +115,11 @@ header .logo{
     padding: 0.5rem 1rem;
     font-weight: bold;
 }
+.menu li a[href^=cadastro]:hover{
+  background: #ca071e;
+}
 .menu a:hover{
   color: $vermelho; 
-  font-weight: 600;
 }
 .procurar input{
     background: $cinza-2;
@@ -242,6 +244,9 @@ header .logo{
         cursor: pointer; 
     }
 }
+.intro-call a:hover{
+  background: #ca071e;
+}
 //Mais ouvidos
 .mais-ouvidos{
    margin-top: 2.8rem;
@@ -330,7 +335,10 @@ header .logo{
   font-size: $fonte-1;
   cursor: pointer;
   border: none;
-}        
+}       
+.btn:hover{
+  background: #ca071e;
+} 
 
 //seção de esclarecimento
 .secao-site-descricao{
