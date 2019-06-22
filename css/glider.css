@@ -18,7 +18,7 @@
     width: 200px;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 759px) {
+@media screen and (min-width: 495px) and (max-width: 759px) {
   .glider {
     width: 400px;
   }
@@ -79,14 +79,14 @@
 .glider-prev,.glider-prev-2,.glider-prev-3{
   left: -40px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 494px) {
   .glider-prev,.glider-prev-2,.glider-prev-3{
-    left: 10px;
+    left: 25px;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 759px) {
+@media screen and (min-width: 495px) and (max-width: 759px) {
   .glider-prev,.glider-prev-2,.glider-prev-3{
-    left: 0px;
+    left: -7px;
   }
 }
 .glider-prev:hover,
@@ -107,14 +107,14 @@
   right: -23px;
   left: auto;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 494px) {
   .glider-next,.glider-next-2,.glider-next-3{
-    right: 23px;
+    right: 45px;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 759px) {
+@media screen and (min-width: 495px) and (max-width: 759px) {
   .glider-next,.glider-next-2,.glider-next-3{
-    right: 0px;
+    right: -7px;
   }
 }
 .glider-next.disabled,
@@ -130,12 +130,12 @@
 .glider-slide {
   min-width: 150px;
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 494px) {
   .glider-slide {
     min-width: 200px;
   }
 }
-@media screen and (min-width: 431px) and (max-width: 759px) {
+@media screen and (min-width: 495px) and (max-width: 759px) {
   .glider-slide {
     min-width: 195px;
     margin: 0 5px;
