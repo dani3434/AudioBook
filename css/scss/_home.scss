@@ -14,7 +14,7 @@ header{
   z-index: 50;
   background: $preto;
   box-shadow: 0px 2px 4px rgba(53, 53, 52, 0.25);
-  @include d(s){
+  @media screen and  (max-width:841px){
     height: 70px;
   }
 }
@@ -29,17 +29,17 @@ header .logo{
   margin: 1rem 1rem 1rem 0rem;
   font-size: 2rem;
   flex-grow: 2;
-  @include d(s){
+  @media screen and  (max-width:841px){
     order: 2;   
     flex-grow: 0;
   }
 }
 .menu{
-  @include d(s){
+  @media screen and  (max-width:841px){
     order: 1;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 480px);
+    height: calc(100vh - 495px);
     background: $preto-2;
     top: 70px;
     left: 0;
@@ -48,15 +48,19 @@ header .logo{
     display: none;
     transition: .3s;
     animation: show-down .3s forwards;  
+    
+  }
+  @include d(s){    
+    height: calc(100vh - 490px);
   }
 }
 .menu.active{
-  @include d(s){
+  @media screen and  (max-width:841px){
     display: block; 
   }
 }
 .menu.procurar-mobile{
-  @include d(s){
+  @media screen and  (max-width:841px){
     top: 135px;
   }
 }
@@ -77,15 +81,18 @@ header .logo{
   padding: 0;
   margin: 0;    
   list-style: none;
-  @include d(s){
+  @media screen and  (max-width:841px){
     display: block;
     width: 100%;
-    margin-left: 15px;
+    margin-left: 12px;
   }    
+  @include d(s){
+    margin-left: 18px;
+  }
 }
 .menu li{
   margin: 0.9rem;
-  @include d(s){
+  @media screen and  (max-width:841px){
     border-bottom: 2px solid $cinza-1;
     padding: 0.7rem 0;
     margin: 0;
@@ -98,13 +105,12 @@ header .logo{
     }
 }
 .menu li:last-child{
-  @include d(s){
-   border-bottom: none;
-   padding: 1.2rem 0;   
+  @media screen and  (max-width:841px){
+   border-bottom: none; 
   }  
 }
 .menu li:first-child{
-  @include d(s){
+  @media screen and  (max-width:841px){
   border-top: 2px solid $cinza-1;
   }
 }
@@ -128,7 +134,7 @@ header .logo{
     padding: 0.6rem 4rem 0.6rem 0.6rem;
     border: none;
     color: $cinza-1;
-    @include d(s){
+    @media screen and  (max-width:841px){
     padding: 0.9rem 4rem 0.9rem  3.3rem;
     width: 100%;     
     }
@@ -137,7 +143,7 @@ header .logo{
   margin-right: 0;
   position: relative;
   display: block;  
-  @include d(s){
+  @media screen and  (max-width:841px){
     order: 3;
     display: none;
     position: absolute;
@@ -151,12 +157,12 @@ header .logo{
   }
 }
 .procurar.active{
-  @include d(s){
+  @media screen and  (max-width:841px){
    display: block;
   }
 }
 .input-field{
-  @include d(s){
+  @media screen and  (max-width:841px){
     width: 103%;
   }
 }
@@ -167,9 +173,10 @@ header .logo{
   cursor: pointer;
   color: $cinza-1;
   font-size:20px;    
-  @include d(s){
+  @media screen and  (max-width:841px){
     order: 3;
     display: block;    
+    padding: 0;
   }
 }
 .procurar button{
@@ -180,16 +187,16 @@ header .logo{
     position: absolute;
     right: 0.55rem;
     bottom: 0.8rem;
-  @include d(s){
-    top: 0.8rem;
-    left: 91%
-  }
+    @media screen and  (max-width:841px){
+     top: 0.8rem;
+     left: 91%
+    }
   i{
     color: $cinza-1;
     font-size: 14px;
-   @include d(s){
+    @media screen and  (max-width:841px){
     font-size: 18px;     
-   }
+    }
  }   
 }
 //Menu Mobile
@@ -200,8 +207,10 @@ header .logo{
   cursor: pointer;
   background: transparent;
   border: none;
-  @include d(s){
+  @media screen and  (max-width:841px){
    display: block;
+   padding: 0;
+
   }
 }
 .menu-mobile i:first-child.active{
@@ -217,6 +226,16 @@ header .logo{
    height: 70%;
    margin-top: 6%;   
 }
+@media screen and (max-width: 494px) {
+  .intro{
+    background-image: url("/img/img-intro-mobile.jpg");
+  }
+}
+@media screen and (min-width: 495px) and (max-width: 759px) {
+  .intro{
+    background-image: url("/img/img-intro-mobile.jpg");
+  }
+}
 .intro-call{
     width: 60%;
     height: 250px;
@@ -224,6 +243,10 @@ header .logo{
     margin-top: 5%;
     margin-right: 15px;
     margin-left: 15px;
+    @include d(m){
+      width: 70%;
+      margin-top: 10%;
+    }
     h1{
       @include tipo-2(50);
       color: white;
@@ -244,6 +267,28 @@ header .logo{
         cursor: pointer; 
     }
 }
+
+@media screen and (max-width: 494px) {
+  .intro-call{
+    width: 90%;
+    margin-top: 25%;
+
+  }
+  .intro-call h1{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 495px) and (max-width: 759px) {
+  .intro-call{
+    width: 90%;
+    margin-top: 20%;
+
+  }
+  .intro-call h1{
+    font-size: 2.1rem;
+  } 
+}
 .intro-call a:hover{
   background: #ca071e;
 }
@@ -257,6 +302,9 @@ header .logo{
      @include tipo-2(36);
      font-weight: medium;
      margin-bottom: 3.8rem;
+     @media screen and (max-width: 759px) {
+      font-size: 1.9em;
+     }
      span{
        color: $vermelho;
      }
@@ -268,10 +316,28 @@ header .logo{
   justify-content: space-between;
   margin: 0 15px;
   margin-bottom: 1.9rem;
+  @media screen and (max-width: 494px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 495px) and (max-width: 759px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .audios{
     max-width: 20%;
     margin-right: 1.25rem;
     flex: 1;
+    @media screen and (max-width: 494px) {
+      max-width:76%;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+    @media screen and (min-width: 495px) and (max-width: 759px) {
+      max-width:60%;
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
     .descricao{
       background: $cinza-2;
       padding: 0.8rem 0;
@@ -296,8 +362,10 @@ header .logo{
    }
   }
 }
+
 .mais-ouvidos-audios .audios:last-child(){
   margin-right: 0;
+  
 }
 .hover-play{
   position: relative;
@@ -351,6 +419,9 @@ header .logo{
     font-weight: medium;
     margin-bottom: 3.8rem;
     text-align: center;
+    @media screen and (max-width: 759px) {
+      font-size: 1.9em;
+    }
     span{
       color: $vermelho;
     }
@@ -361,9 +432,18 @@ header .logo{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  @media screen and (max-width: 759px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px;
+  }
   .img-secao{
     max-width:33%;
     margin-left: 7rem;
+    @media screen and (max-width: 759px) {
+      margin: 0;
+      max-width:60%;
+    }
     img{
       border-radius: 2px;
     }
@@ -371,9 +451,32 @@ header .logo{
   .descricao-secao{
     max-width: 39%;
     margin-right: 3rem;
+    @media screen and (max-width: 759px) {
+      margin: 0;
+      max-width: 60%;
+    } 
     p{
-    @include tipo-1(20);
+      @include tipo-1(20);
+      @media screen and (max-width: 759px) {
+        @include tipo-1(16);
+        
+      }
     }
+  }
+}
+.separador{
+  border-width: 2px;
+  border-color:$cinza-2;
+  height: 395px;
+  margin-top: 0;
+  border-style: solid;
+  @media screen and (max-width: 759px) {
+    height: 0;
+    width: 60%;
+    margin: 20px 0;
+  }
+  @include d(m){
+  height: 250px;
   }
 }
 
