@@ -828,36 +828,110 @@
 <script src="js/glider.min.js"></script>
 <script>
 
+
 window.addEventListener('load', function(){
-       
+ 
   new Glider(document.querySelector('.glider'),{
-          slidesToShow: 6,
+          slidesToShow: 1,
           slidesToScroll: 1,
           draggable: true,
+          scrollLock: true,
+
             arrows: {
               prev: '.glider-prev',
               next: '.glider-next'
             },
+            responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
         })
   
         new Glider(document.querySelector('.glider-2'),{
-          slidesToShow: 6,
+          slidesToShow: 1,
           slidesToScroll: 1,
           draggable: true,
+          scrollLock: true,
+
             arrows: {
               prev: '.glider-prev-2',
               next: '.glider-next-2'
             },
+
+            responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
         })
 
         new Glider(document.querySelector('.glider-3'),{
-          slidesToShow: 6,
+          slidesToShow: 1,
           slidesToScroll: 1,
           draggable: true,
+          scrollLock: true,
+
             arrows: {
               prev: '.glider-prev-3',
               next: '.glider-next-3'
             },
+            responsive: [
+    {
+      // screens greater than >= 775px
+      breakpoint: 775,
+      settings: {
+        // Set to `auto` and provide item width to adjust to viewport
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },{
+      // screens greater than >= 1024px
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
         })
    
 })
@@ -865,6 +939,6 @@ window.addEventListener('load', function(){
 
  
 </script>
-<script type="module" src="js/config.js"></script>
+<script src="js/config.js"></script>
 </body>
 </html>
