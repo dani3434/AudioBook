@@ -49,18 +49,23 @@ ul:not(.browser-default) > li {
   border-bottom: 2px solid #959594;
   margin-left: 0.6rem;
 }
-@media screen and (max-width: 759px) {
+@media screen and  (max-width:841px){
   .dropdown-content li {
-    margin-left: 3.1rem;
+    margin-left: 1.1rem;
     width: 86%;
+  }
+}
+@media screen and  (max-width:759px){
+  .dropdown-content li {
+    margin-left: 3.1rem;  
   }
 }
 .dropdown-content li:last-child{
   border: none;
 }
-.dropdown-content li:hover, .dropdown-content li.active {
-  /* background-color: #eee; */
-}
+/* .dropdown-content li:hover, .dropdown-content li.active {
+  background-color: rgb(107, 104, 104);
+} */
 
 .dropdown-content li:focus {
   outline: none;

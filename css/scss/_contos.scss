@@ -16,10 +16,13 @@
 }   
 }
 .intro-contos{
-  background: url("/img/intro-conto.jpg") no-repeat center;
+  background: url("/../img/intro-conto.jpg") no-repeat center;
   background-size: cover; 
   height: 70%;
   margin-top: 6%;
+  @media screen and (max-width: 759px) {
+    background-image: url("/img/intro-conto-mobile.jpg");
+  }
   h1{
     text-align: center;
       @include tipo-2(50);
@@ -32,6 +35,7 @@
 .contos-section{
   .envolve-conto{
     padding-top: 3rem;
+    margin: 0 15px;
     h2{
       @include tipo-1(24);
       color: white;
@@ -108,36 +112,57 @@
     @include tipo-2(36);
     font-weight: medium;
     text-align: center;
+    @media screen and (max-width: 759px) {
+      font-size: 1.9em;
+    }
     span{
       color: $vermelho;
     }
   }
 }
-.separador{
-  border-width: 2px;
-  border-color:$cinza-2;
-  height: 395px;
-  margin-top: 0;
-  border-style: solid;
-}
 
 .flex-mais-ouvidos{
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  @media screen and (max-width: 759px) {
+    flex-direction: column;
+  }
   .mais-ouvido-img{
-    height: 400px;
-    width: 400px;
+    max-width: 33%;
     border-radius: 2px;
+    @media screen and (min-width: 760px) and (max-width: 1199px) {
+    max-width: 50%;
+    }
+    @media screen and (max-width: 759px) {
+      max-width: 260px;
+      margin: 0 auto;
+    }
   }
   hr{
     margin: 0 3rem;
+    @media screen and (min-width: 760px) and (max-width: 1199px) {
+      height: 380px;
+    }
+    @media screen and (max-width: 759px) {
+      margin: 20px auto;
+      width: 260px;
+    }
   } 
 }
 .mais-ouvido-lista{
-  margin-right: 8.5rem;
+  width: 405px;
+  @media screen and (min-width: 760px) and (max-width: 1199px) {
+    width: 240px;
+  }
+  @media screen and (max-width: 759px) {
+    width: 250px;
+    margin: 0 auto;
+  }
   li{
     margin-bottom: 2rem;
+    @media screen and (max-width: 759px) {
+    margin-bottom: 1rem;
+    }
   }
   li:last-child{
     margin-bottom: 0;

@@ -5,6 +5,11 @@
   margin: 0 auto;
   position: relative;
 }
+@media screen and (min-width: 495px) and (max-width: 759px) {
+  .glider-contain {
+    width: 80%;
+  } 
+}
 .glider {
   margin: 0 auto;
   position: relative;
@@ -18,9 +23,10 @@
     width: 200px;
   }
 }
-@media screen and (min-width: 495px) and (max-width: 759px) {
+
+@media screen and (min-width: 760px) and (max-width: 1199px) {
   .glider {
-    width: 400px;
+    width: 600px;
   }
 }
 .glider-track {
@@ -86,7 +92,12 @@
 }
 @media screen and (min-width: 495px) and (max-width: 759px) {
   .glider-prev,.glider-prev-2,.glider-prev-3{
-    left: -7px;
+    left: -30px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .glider-prev,.glider-prev-2,.glider-prev-3{
+    left: 10px;
   }
 }
 .glider-prev:hover,
@@ -114,7 +125,12 @@
 }
 @media screen and (min-width: 495px) and (max-width: 759px) {
   .glider-next,.glider-next-2,.glider-next-3{
-    right: -7px;
+    right: -30px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .glider-next,.glider-next-2,.glider-next-3{
+    right: 30px;
   }
 }
 .glider-next.disabled,
@@ -137,8 +153,13 @@
 }
 @media screen and (min-width: 495px) and (max-width: 759px) {
   .glider-slide {
-    min-width: 195px;
+    min-width: 175px;
     margin: 0 5px;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1199px) {
+  .glider-slide {
+    min-width: 200px;
   }
 }
 .glider-hide {

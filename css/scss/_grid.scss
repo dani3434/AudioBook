@@ -1,7 +1,7 @@
 //Variaveis do grid
 $colu:12;
 $gutter:15px;
-$l-device:1200px;
+$l-device:1199px;
 $m-device:760px;
 $s-device:759px;
 //Box-sizing
@@ -15,7 +15,7 @@ $s-device:759px;
             @content;
         }
     }@else if $size == m{
-        @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device} - 1){
+        @media screen and (min-width: #{$m-device}) and (max-width: #{$l-device}){
             @content;
         }
     }@else if $size == s{
@@ -84,10 +84,10 @@ $s-device:759px;
     }
 }
 @mixin container{
-    max-width: $l-device;
+    max-width: 1200px;
     margin: 0 auto;
     @include d(m){
-      max-width: $m-device;    
+      max-width: 900px;    
     }
     @include d(s){
       max-width: $s-device;  

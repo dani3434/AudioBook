@@ -1,6 +1,9 @@
 //Perfil
 .perfil{
   margin: 0.5rem 0.9rem !important;
+  @media screen and  (max-width:841px){
+    margin: 0.5rem 0rem !important;
+  }
   cursor: pointer;
   &:last-child{
     @include d(s){
@@ -63,6 +66,9 @@
   position: absolute;
   transform: translate(-50%, -50%);
   border-radius: 2px;
+  @include d(s){
+    top: 40%;
+  }
   i{
    margin-right: 10px;
    font-size: 23px;
@@ -74,15 +80,34 @@
 //Perfil
 .justify-content{
   justify-content: space-between;
+  @include d(s){
+    flex-direction: column;
+    margin: 0 15px;
+  }
 }
 .info-perfil{
   position: relative;
   top: -150px;
+  @include d(s){
+    width: 100%;
+  }
   h1{
     @include tipo-1(24);
     color: white;
     text-align: center;
     margin-top: 15px;
+  }
+  @media screen and (min-width: 760px) and (max-width: 1199px) {
+    width: calc(33.33333% - 15px);
+  }
+}
+.favoritos{
+  @media screen and (min-width: 760px) and (max-width: 1199px) {
+    width: calc(66.66667% - 15px);
+  }
+  @include d(s){
+    width: 100%;
+    margin-top: -150px;
   }
 }
 .btn-perfil{
@@ -109,8 +134,23 @@
   background: #201D1D;
   overflow: hidden;
   position: relative;
+  @media screen and (min-width: 760px) and (max-width: 1199px) {
+    width: 250px;
+    height: 250px;
+  }
+  @include d(s){
+    margin: 0 auto;
+    width: 250px;
+    height: 250px;
+  }
   img{
     margin: 3rem auto;
+    @media screen and (min-width: 760px) and (max-width: 1199px) {
+      margin: 2rem auto;
+    }
+    @include d(s){
+      margin: 2rem auto;     
+    }
   }
 }
 .mudar-perfil{
@@ -150,6 +190,12 @@
   background: $cinza-2;
   max-width: 280px;
   text-align: center;
+  @media screen and (min-width: 760px) and (max-width: 1199px) {
+    max-width: 250px;
+  }
+  @include d(s){
+    margin: 0 auto;
+  }
   h2{
     color: white;
     @include tipo-1(18);
@@ -164,10 +210,16 @@
     color: $cinza-1;
     max-width: 230px;
     padding: 0px 0 20px 0;
+    @media screen and (min-width: 760px) and (max-width: 1199px) {
+      max-width: 200px;
+    }
   }
   a{
     align-self: flex-start;
     color: white;
+    @media screen and (min-width: 760px) and (max-width: 1199px) {
+     margin-left: 10px;
+    }
     i{
       font-size: 14px;
     }
@@ -190,11 +242,17 @@
 .favorito-content{
   margin: 1rem auto;
   max-width: 500px;
+  @include d(s){
+  max-width: 350px;   
+  }
   hr{
     width: 470px;
     border-color: $cinza-2;
     margin-bottom: 15px;
     border-width: 2px;
+    @include d(s){    
+     width: 325px;
+    } 
   } 
 }
 .favorito-itens{
@@ -207,6 +265,9 @@
   background: $cinza-2;
   border-bottom: 2px solid $cinza-2;
   border-radius: 2px;
+  @include d(s){
+   flex-direction: column;
+  }
 }
 .favorito-header{
   display: flex;
@@ -233,8 +294,19 @@
 .favorito-descricao-audio p{
   max-width: 420px;
 }
+.favorito-descricao-audio{
+  @include d(s){
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .favorito-img{
   margin-right: 15px;
+  @include d(s){
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
 .favorito-footer{
   display: flex;

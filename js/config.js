@@ -1,25 +1,27 @@
 
-
-  const botao = document.querySelector('.menu-mobile');
-  const menu = document.querySelector('.menu');
-  const procurar = document.querySelector('.procurar-mobile');
-  const procurarContent = document.querySelector('.procurar');
-
-  function clickMenu(event){
-    event.preventDefault();
-    menu.classList.toggle('active');
-  }
-
-  function clickProcurar(event){
-    event.preventDefault();
-    procurarContent.classList.toggle('active');
-  }
-  botao.addEventListener('click',clickMenu);
-  procurar.addEventListener('click',clickProcurar);
-
   
+  function menumobile(){
+    const botao = document.querySelector('.menu-mobile');
+    const menu = document.querySelector('.menu');
+    const procurar = document.querySelector('.procurar-mobile');
+    const procurarContent = document.querySelector('.procurar');
 
+    function clickMenu(event){
+      event.preventDefault();
+      menu.classList.toggle('active');
+    }
 
+    function clickProcurar(event){
+      event.preventDefault();
+      procurarContent.classList.toggle('active');
+    }
+    botao.addEventListener('click',clickMenu);
+    procurar.addEventListener('click',clickProcurar);
+  };
+
+  menumobile();
+
+   
   
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.autocomplete');
