@@ -828,9 +828,51 @@
 <script src="js/glider.min.js"></script>
 <script>
 
+  var screen =  [
+    {
+      // configuração de tela for menor 760px, slide = 1 item 
+      breakpoint: 760,
+      settings: {
+        slidesToShow: 'auto',
+        slidesToScroll: 'auto',
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },
+    {
+      // configuração de tela for maior 761px, slide = 3 item 
+      breakpoint: 761,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },
+    {
+      // configuração de tela for maior 1024px, slide = 4 item 
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    },
+    {
+      // configuração de tela for maior 1100px, slide = 6 item 
+      breakpoint: 1100,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        itemWidth: 150,
+        duration: 0.25
+      }
+    }
+  ]
 
 window.addEventListener('load', function(){
- 
+console.log(window.innerWidth) 
   new Glider(document.querySelector('.glider'),{
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -841,28 +883,7 @@ window.addEventListener('load', function(){
               prev: '.glider-prev',
               next: '.glider-next'
             },
-            responsive: [
-    {
-      // screens greater than >= 775px
-      breakpoint: 775,
-      settings: {
-        // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: 'auto',
-        slidesToScroll: 'auto',
-        itemWidth: 150,
-        duration: 0.25
-      }
-    },{
-      // screens greater than >= 1024px
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        itemWidth: 150,
-        duration: 0.25
-      }
-    }
-  ]
+            responsive: screen
         })
   
         new Glider(document.querySelector('.glider-2'),{
@@ -876,28 +897,7 @@ window.addEventListener('load', function(){
               next: '.glider-next-2'
             },
 
-            responsive: [
-    {
-      // screens greater than >= 775px
-      breakpoint: 775,
-      settings: {
-        // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: 'auto',
-        slidesToScroll: 'auto',
-        itemWidth: 150,
-        duration: 0.25
-      }
-    },{
-      // screens greater than >= 1024px
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        itemWidth: 150,
-        duration: 0.25
-      }
-    }
-  ]
+            responsive: screen
         })
 
         new Glider(document.querySelector('.glider-3'),{
@@ -910,28 +910,7 @@ window.addEventListener('load', function(){
               prev: '.glider-prev-3',
               next: '.glider-next-3'
             },
-            responsive: [
-    {
-      // screens greater than >= 775px
-      breakpoint: 775,
-      settings: {
-        // Set to `auto` and provide item width to adjust to viewport
-        slidesToShow: 'auto',
-        slidesToScroll: 'auto',
-        itemWidth: 150,
-        duration: 0.25
-      }
-    },{
-      // screens greater than >= 1024px
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        itemWidth: 150,
-        duration: 0.25
-      }
-    }
-  ]
+            responsive:screen
         })
    
 })
