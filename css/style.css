@@ -250,6 +250,7 @@ header .logo {
     -webkit-box-flex: 0;
     -ms-flex-positive: 0;
     flex-grow: 0;
+    margin: 1rem 0rem 1rem 0rem;
   }
 }
 
@@ -276,7 +277,7 @@ header .logo {
 
 @media screen and (max-width: 759px) {
   .menu {
-    height: calc(100vh - 490px);
+    height: 155px;
   }
 }
 
@@ -1041,6 +1042,8 @@ footer p {
 @media screen and (max-width: 759px) {
   .mais-ouvidos-contos h2 {
     font-size: 1.9em;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -1214,7 +1217,7 @@ footer p {
   .perfil:last-child {
     border-bottom: none;
     padding: 0 !important;
-    margin: 0.9rem 0rem !important;
+    margin: 0.5rem 0rem !important;
   }
 }
 
