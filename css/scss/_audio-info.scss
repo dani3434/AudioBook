@@ -58,36 +58,11 @@
 }
 .player-lines{
   width: 72%;
-} 
-.linha-1{
-  width: 100%;
-  background: $cinza-2;
-  height: 4px;
-  position: relative;
   cursor: pointer;
-  &:hover .linha-3{
-    height: 10px;
-    width: 10px;
-    background: $vermelho;
-    border-radius: 50%;
-    right: -7px;
-    top: -3px;
-    position: absolute;
-    display: block;
-    transition: ease-in 6s;
-  }
+} 
+.rangeouter{
+  height: 0.2em;
 }
-.linha-2{
-  width: 50%;
-  background: $vermelho;
-  height: 4px;
-  position: absolute;
-  transition: ease-in 6s;
-}
-.linha-3{
-  display: none;
-}
-
 .player-minutos-2 span{
   @include tipo-1(13);
   color: $cinza-1;
@@ -95,7 +70,7 @@
 }
 .player-volume{
   display: flex;
-  width: 15%;
+  width: 4%;
   align-items: center;
   button{
    background: none;
@@ -110,7 +85,7 @@
 }
 
 .volume-lines{
-   width: 100%;
+   display: none;
   .volume-linha-1{
     width: 100%;
     background: $cinza-2;

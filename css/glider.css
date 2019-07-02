@@ -115,7 +115,7 @@
   color: #790714
 }
 .glider-next,.glider-next-2,.glider-next-3{
-  right: -23px;
+  right:  -32px;
   left: auto;
 }
 @media screen and (max-width: 494px) {
@@ -144,11 +144,11 @@
   cursor: default;
 }
 .glider-slide {
-  min-width: 150px;
+  min-width: 199px;
 }
 @media screen and (max-width: 494px) {
   .glider-slide {
-    min-width: 200px;
+    min-width: 195px;
   }
 }
 @media screen and (min-width: 495px) and (max-width: 759px) {

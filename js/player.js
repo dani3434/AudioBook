@@ -44,16 +44,16 @@ var songList = [
                 song.play()
                 $(".play-pause").attr("class","fas fa-pause play-pause");
               },
-            fgColour: "#F00000", // cor da barra de progresso
-            bgColour: "#ddd"   , // cor do Background de progresso
+            fgColour: "#FF001E", // cor da barra de progresso
+            bgColour: "#161817"   , // cor do Background de progresso
           });
 
 
           var volume = new RangeSlider($(".volumeProgreso"), {
             percentage: 50,
             pollLimit: 6,
-            fgColour: "#F00000", // cor da barra de volume
-            bgColour: "#ddd"   , // cor do Background de volume
+            fgColour: "#FF001E", // cor da barra de volume
+            bgColour: "#161817"   , // cor do Background de volume
 
             onMove: function(e, percentage) {
                 percentage=  percentage==100? percentage=1 : 
