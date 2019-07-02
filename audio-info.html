@@ -38,22 +38,32 @@
                   <i class="fas fa-angle-down"></i>
                 </a>  
               </li>
-               <li class="procurar">
-                 <input type="text" placeholder="Buscar escritores" >
-                 <button type="submit">
-                  <i class="fas fa-search"></i>
-                 </button>    
-               </li>  
              </ul>
            </nav>  
+
+           <button class="menu-mobile">
+            <i class="fas fa-bars"></i>
+          </button>
+
+            <div class="procurar">
+             <div class="input-field ">
+                 <input type="text" id="autocomplete-input" class="autocomplete" placeholder="Buscar escritores" >
+             </div>  
+             <button type="submit">
+              <i class="fas fa-search"></i>
+            </button>  
+          </div>
+          <button type="submit" class="procurar-mobile">
+            <i class="fas fa-search"></i>
+          </button> 
+
      </div>
-    
-    </div>    
-       
-  </header>
+    </div>        
+   </header>
   
   <main class="audio-info-content">
     <div class="container">
+     <div class="row-audio-info">
 
       <div class="audio-info-titulos">
         <div class="audio-info-titulo">
@@ -98,9 +108,9 @@
             <div class="volumeProgreso"></div>
           </div>
         </div>
-        
-      </div>
 
+      </div>
+       
       <section class="audio-info-enviado">
         <h3>Enviado por:</h3>
 
@@ -116,97 +126,100 @@
         </div>
 
       </section>
-
+     </div>
     </div>
     <hr>
 
     <section class="letra">
-      <h4>Descrição:</h4>
-      <p>
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-        incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-      </p>
- 
+     <div class="row-audio-info">
+        <h4>Descrição:</h4>
+        <p>
+          "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+          incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+        </p>
+     </div>
     </section>
 
     <hr>
     
     <section class="comentario">
-     <div class="comentario-quantidade">
-        <i class="fas fa-comments"></i>
-        <span>3</span>
-        <span>Comentários:</span>
-     </div>
-      
-     <hr>
-     
-     <div class="deixar-comentario">
-      <div class="perfil-img">
-        <img src="./img/perfil.jpg" alt="perfil">
+     <div class="row-audio-info">           
+      <div class="comentario-quantidade">
+          <i class="fas fa-comments"></i>
+          <span>3</span>
+          <span>Comentários:</span>
       </div>
-      <input type="text" placeholder="Deixe Seu comentário ">
-      <button class="btn">Enviar</button>
-     </div>
+     </div>    
+      <hr>
+     <div class="row-audio-info">                
+      <div class="deixar-comentario">
+        <div class="perfil-img">
+          <img src="./img/perfil.jpg" alt="perfil">
+        </div>
+        <input type="text" placeholder="Deixe Seu comentário ">
+        <button class="btn">Enviar</button>
+      </div>
 
-     <div class="comentairo-content"> 
-   
-       <div class="comentario-item">
+      <div class="comentairo-content"> 
+    
+        <div class="comentario-item">
 
-          <div class="perfil-img">
-              <img src="./img/perfil.jpg" alt="perfil">
-          </div>
-          
-          <div class="comentario-item-content">
-            <div class="comentario-item-titulo">
-              <h5>Daniel Dias</h5>
-              <span>- 1 hora</span>
+            <div class="perfil-img">
+                <img src="./img/perfil.jpg" alt="perfil">
             </div>
-      
-            <p>Que audio maravilhoso,não consigo parar de ouvir</p>
             
-            <button>Responder</button>
-          </div>
-
-       </div>
-       
-       <div class="comentario-item">
-         
-          <div class="perfil-img">
-              <img src="./img/perfil.jpg" alt="perfil">
-          </div>
-          
-          <div class="comentario-item-content">
-            <div class="comentario-item-titulo">
-              <h5>Rafael do Carmo</h5>
-              <span>- 20 minutos</span>
+            <div class="comentario-item-content">
+              <div class="comentario-item-titulo">
+                <h5>Daniel Dias</h5>
+                <span>- 1 hora</span>
+              </div>
+        
+              <p>Que audio maravilhoso,não consigo parar de ouvir</p>
+              
+              <button>Responder</button>
             </div>
-      
-            <p>Que besteira,pessoal perde tempo com isso</p>
-            
-            <button>Responder</button>
-          </div>
 
-       </div>
-  
-       <div class="comentario-item">
-         
-          <div class="perfil-img">
-              <img src="./img/perfil.jpg" alt="perfil">
-          </div>
+        </div>
+        
+        <div class="comentario-item">
           
-          <div class="comentario-item-content">
-            <div class="comentario-item-titulo">
-              <h5>Jordão</h5>
-              <span>- 40 minutos</span>
+            <div class="perfil-img">
+                <img src="./img/perfil.jpg" alt="perfil">
             </div>
-      
-            <p>Você que é besta :(</p>
             
-            <button>Responder</button>
-          </div>
+            <div class="comentario-item-content">
+              <div class="comentario-item-titulo">
+                <h5>Rafael do Carmo</h5>
+                <span>- 20 minutos</span>
+              </div>
+        
+              <p>Que besteira,pessoal perde tempo com isso</p>
+              
+              <button>Responder</button>
+            </div>
 
-       </div>
+        </div>
+    
+        <div class="comentario-item">
+          
+            <div class="perfil-img">
+                <img src="./img/perfil.jpg" alt="perfil">
+            </div>
+            
+            <div class="comentario-item-content">
+              <div class="comentario-item-titulo">
+                <h5>Jordão</h5>
+                <span>- 40 minutos</span>
+              </div>
+        
+              <p>Você que é besta :(</p>
+              
+              <button>Responder</button>
+            </div>
 
+        </div>
+
+      </div>
      </div>
     </section>
 
@@ -220,7 +233,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/rangeslider.min.js"></script>
-<script src="js/player.js"></script>
-
+  <script src="js/player.js"></script>
+  <script  src="js/config.js"></script>                          
 </body>
 </html>

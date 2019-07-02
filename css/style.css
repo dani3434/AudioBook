@@ -1949,7 +1949,7 @@ footer p {
 }
 
 .audio-info-content {
-  padding-top: 8.1rem;
+  padding-top: 7rem;
 }
 
 .audio-info-content .audio-info-img {
@@ -1957,9 +1957,19 @@ footer p {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 759px) {
+  .audio-info-content .audio-info-img {
+    width: 300px;
+  }
+}
+
 .audio-info-content hr {
   border-width: 3px;
   border-color: #161817;
+}
+
+.row-audio-info {
+  margin: 0 15px;
 }
 
 .audio-info-titulo h1 {
@@ -2006,6 +2016,9 @@ footer p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .play-btn {
@@ -2024,11 +2037,11 @@ footer p {
   font-size: 0.8125em;
   line-height: 1.15385em;
   color: #959594;
-  margin: 0 10px 0 15px;
+  margin: 0 15px;
 }
 
 .player-lines {
-  width: 72%;
+  width: 80%;
   cursor: pointer;
 }
 
@@ -2041,17 +2054,23 @@ footer p {
   font-size: 0.8125em;
   line-height: 1.15385em;
   color: #959594;
-  margin: 0 15px 0 10px;
+  margin: 0 15px;
 }
 
 .player-volume {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 4%;
+  width: 3%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media screen and (max-width: 759px) {
+  .player-volume {
+    width: 7%;
+  }
 }
 
 .player-volume button {
@@ -2068,34 +2087,6 @@ footer p {
 
 .volume-lines {
   display: none;
-}
-
-.volume-lines .volume-linha-1 {
-  width: 100%;
-  background: #161817;
-  height: 4px;
-  position: relative;
-  cursor: pointer;
-}
-
-.volume-lines .volume-linha-1:hover .volume-linha-3 {
-  height: 10px;
-  width: 10px;
-  background: #FF001E;
-  border-radius: 50%;
-  right: -7px;
-  top: -3px;
-  position: absolute;
-  display: block;
-  -webkit-transition: ease-in 6s;
-  transition: ease-in 6s;
-}
-
-.volume-lines .volume-linha-2 {
-  width: 50%;
-  background: #FF001E;
-  height: 4px;
-  position: absolute;
 }
 
 .volume-linha-3 {
@@ -2241,6 +2232,13 @@ footer p {
   margin-right: 10px;
   width: 40px;
   height: 40px;
+}
+
+@media screen and (max-width: 759px) {
+  .deixar-comentario div {
+    width: 50px;
+    height: 36px;
+  }
 }
 
 .deixar-comentario button {

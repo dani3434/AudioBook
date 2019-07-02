@@ -1,17 +1,22 @@
 //Audio Info
 
 .audio-info-content{
-  padding-top: 8.1rem;
+  padding-top: 7rem;
   .audio-info-img{
     width: 350px;
     margin: 0 auto;
+    @include d(s){
+     width: 300px;
+    }
   }
   hr{
     border-width: 3px;
     border-color: $cinza-2;
   }
 }
-
+.row-audio-info{
+  margin: 0 15px;
+}
 .audio-info-titulo{
   h1{
     @include tipo-1(20);
@@ -41,6 +46,7 @@
   max-width: 905px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .play-btn{
    background: none;
@@ -54,10 +60,10 @@
 .player-minutos-1 span{
   @include tipo-1(13);
   color: $cinza-1;
-  margin: 0 10px 0 15px;
+  margin: 0 15px;
 }
 .player-lines{
-  width: 72%;
+  width: 80%;
   cursor: pointer;
 } 
 .rangeouter{
@@ -66,12 +72,15 @@
 .player-minutos-2 span{
   @include tipo-1(13);
   color: $cinza-1;
-  margin: 0 15px 0 10px;
+  margin: 0 15px;
 }
 .player-volume{
   display: flex;
-  width: 4%;
+  width: 3%;
   align-items: center;
+  @include d(s){
+    width: 7%;
+  }
   button{
    background: none;
    border:none;
@@ -86,30 +95,6 @@
 
 .volume-lines{
    display: none;
-  .volume-linha-1{
-    width: 100%;
-    background: $cinza-2;
-    height: 4px;
-    position: relative;
-    cursor: pointer;
-    &:hover .volume-linha-3{
-      height: 10px;
-      width: 10px;
-      background: $vermelho;
-      border-radius: 50%;
-      right: -7px;
-      top: -3px;
-      position: absolute;
-      display: block;
-      transition: ease-in 6s;
-    }
-  }
-  .volume-linha-2{
-    width: 50%;
-    background: $vermelho;
-    height: 4px;
-    position: absolute;
-  }
 }
 .volume-linha-3{
   display: none; 
@@ -215,6 +200,10 @@
     margin-right: 10px;
     width: 40px;
     height: 40px;
+    @include d(s){
+      width: 50px;
+      height: 36px; 
+    }
   }
   button{
     margin-left: 10px;
