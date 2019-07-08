@@ -1968,8 +1968,10 @@ footer p {
   border-color: #161817;
 }
 
-.row-audio-info {
-  margin: 0 15px;
+@media screen and (max-width: 759px) {
+  .row-audio-info {
+    margin: 0 15px;
+  }
 }
 
 .audio-info-titulo h1 {
@@ -2089,12 +2091,44 @@ footer p {
   display: none;
 }
 
+.volume-lines.ativo {
+  display: block;
+  -webkit-animation: volume .3s forwards;
+  animation: volume .3s forwards;
+}
+
+@-webkit-keyframes volume {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, 30px, 0);
+    transform: translate3d(0px, 30px, 0);
+  }
+  do {
+    opacity: 1;
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+@keyframes volume {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0px, 30px, 0);
+    transform: translate3d(0px, 30px, 0);
+  }
+  do {
+    opacity: 1;
+    -webkit-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
 .volume-linha-3 {
   display: none;
 }
 
 .audio-info-enviado {
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   max-width: 905px;
 }
 
@@ -2298,6 +2332,27 @@ footer p {
   font-size: 0.8125em;
   line-height: 1.15385em;
   color: #959594;
+}
+
+.audio-info-pdf {
+  margin-top: 15px;
+}
+
+.pdf-bloco {
+  background: #161817;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875em;
+  line-height: 1.64286em;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.pdf-bloco i {
+  font-size: 20px;
+  margin-left: 5px;
 }
 
 .navega-login {

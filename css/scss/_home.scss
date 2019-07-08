@@ -49,7 +49,6 @@ header .logo{
     display: none;
     transition: .3s;
     animation: show-down .3s forwards;  
-    
   }
   @include d(s){    
     height: 155px;

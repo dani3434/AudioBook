@@ -15,7 +15,9 @@
   }
 }
 .row-audio-info{
-  margin: 0 15px;
+  @include d(s){
+   margin: 0 15px;
+  }
 }
 .audio-info-titulo{
   h1{
@@ -96,13 +98,27 @@
 .volume-lines{
    display: none;
 }
+.volume-lines.ativo{
+  display: block;
+  animation: volume .3s forwards;  
+}
+@keyframes volume{
+  from{
+    opacity: 0;
+    transform: translate3d(0px,30px,0);
+  }
+  do{
+    opacity: 1;
+    transform: translate3d(0px,0,0);
+  }
+}
 .volume-linha-3{
   display: none; 
 }
 
 
 .audio-info-enviado{
-  margin: 0 auto 30px auto;
+  margin: 0 auto 20px auto;
   max-width: 905px;
   h3{
     @include tipo-1(16);
@@ -247,4 +263,21 @@
   @include tipo-1(13);
     color: $cinza-1;
  }
+}
+
+.audio-info-pdf{
+  margin-top: 15px;
+}
+.pdf-bloco{
+  background: $cinza-2;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  @include tipo-1(14);
+  border-radius: 2px;
+  cursor: pointer;
+  i{
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }
