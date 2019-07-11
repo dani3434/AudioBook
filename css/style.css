@@ -261,7 +261,7 @@ header .logo {
     order: 1;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 495px);
+    height: 165px;
     background: #040402;
     top: 70px;
     left: 0;
@@ -319,7 +319,7 @@ header .logo {
   }
 }
 
-.menu ul {
+.menu-ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,15 +332,15 @@ header .logo {
 }
 
 @media screen and (max-width: 841px) {
-  .menu ul {
+  .menu-ul {
     display: block;
     width: 100%;
-    margin-left: 12px;
+    margin-left: 7px;
   }
 }
 
 @media screen and (max-width: 759px) {
-  .menu ul {
+  .menu-ul {
     margin-left: 18px;
   }
 }
@@ -1204,6 +1204,7 @@ footer p {
 
 .perfil {
   margin: 0.5rem 0.9rem !important;
+  position: relative;
   cursor: pointer;
 }
 
@@ -1242,6 +1243,60 @@ footer p {
 
 .perfil span {
   margin-right: 12px;
+}
+
+.perfil-drop {
+  position: absolute;
+  background: #161817;
+  border-radius: 2px;
+  z-index: 200;
+  top: 35px;
+  right: 0;
+  display: none;
+}
+
+.perfil-drop .perfil-drop-itens {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.perfil-drop .perfil-drop-itens i {
+  margin-right: 5px;
+  color: #959594;
+}
+
+[data-dropdown].ativo .perfil-drop {
+  display: block;
+  -webkit-animation: show-up .3s forwards;
+  animation: show-up .3s forwards;
+}
+
+@-webkit-keyframes show-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0px, 0);
+    transform: translate3d(0, 0px, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0);
+  }
 }
 
 .intro-perfil {

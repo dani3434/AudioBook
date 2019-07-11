@@ -1,6 +1,7 @@
 //Perfil
 .perfil{
   margin: 0.5rem 0.9rem !important;
+  position: relative;
   @media screen and (max-width:841px){
     margin: 0.5rem 0rem !important;
   }
@@ -27,6 +28,39 @@
 }
 .perfil span{
   margin-right: 12px;
+}
+//Dropdown
+.perfil-drop{
+  position: absolute;
+  background: $cinza-2;
+  border-radius: 2px;
+  z-index: 200;
+  top: 35px;
+  right: 0;
+  display: none;
+  .perfil-drop-itens{
+    font-size: 14px;
+    display: flex;
+    i{
+      margin-right: 5px;
+      color: $cinza-1;
+    }
+  }
+}
+[data-dropdown].ativo .perfil-drop{
+  display: block;
+  animation: show-up .3s forwards;
+}
+
+@keyframes show-up{
+  from{
+    opacity: 0;
+    transform: translate3d(0,0px,0);
+  }
+  to{
+    opacity: 1;
+    transform: translate3d(0,10px,0);
+  }
 }
 //intro-perfil
 .intro-perfil{

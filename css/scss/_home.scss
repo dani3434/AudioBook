@@ -40,7 +40,7 @@ header .logo{
     order: 1;
     position: absolute;
     width: 100%;
-    height: calc(100vh - 495px);
+    height: 165px;
     background: $preto-2;
     top: 70px;
     left: 0;
@@ -75,7 +75,7 @@ header .logo{
     transform: translate3d(0px,0,0);
   }
 }
-.menu ul{
+.menu-ul{
   display: flex;
   align-items: center;
   padding: 0;
@@ -84,7 +84,7 @@ header .logo{
   @media screen and  (max-width:841px){
     display: block;
     width: 100%;
-    margin-left: 12px;
+    margin-left: 7px;
   }    
   @include d(s){
     margin-left: 18px;

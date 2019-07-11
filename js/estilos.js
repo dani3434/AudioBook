@@ -26,12 +26,30 @@ menumobile();
 function interacaoSom(){
   const classVolume =  document.querySelector('.player-volume');
   const volumeLinhas = document.querySelector('.volume-lines');
+  
+  if(classVolume && volumeLinhas){
+    function callSom(){
+      volumeLinhas.classList.toggle('ativo');
+    }
 
-  function callSom(){
-    volumeLinhas.classList.toggle('ativo');
+    classVolume.addEventListener('click',callSom);
   }
-
-  classVolume.addEventListener('click',callSom);
 }
 
 interacaoSom();
+
+function initiDropDownMenu(){
+  const dropdownMenu = document.querySelector('[data-dropdown]');
+  
+  function handleClick(event){
+    event.preventDefault();
+    this.classList.toggle('ativo');
+  } 
+  
+  ['touchstart','click'].forEach(onlyEvent =>{
+    dropdownMenu.addEventListener(onlyEvent,handleClick);
+  });
+
+}
+
+initiDropDownMenu();

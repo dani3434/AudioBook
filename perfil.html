@@ -24,11 +24,11 @@
            </div>
 
            <nav class="menu">
-             <ul>
+             <ul class="menu-ul">
               <li><a href="enviar-conto.html">Enviar Conto</a></li>
                <li><a href="contos.html">Contos</a></li>
-              <li class="perfil">
-                <a>
+              <li class="perfil" data-dropdown>
+                <a href="#">
                   <div class="perfil-img">
                       <img src="./img/perfil.jpg" alt="perfil">
                   </div>
@@ -36,7 +36,28 @@
                   <span>Daniel Dias</span>
 
                   <i class="fas fa-angle-down"></i>
-                </a>  
+                </a>
+                
+                <ul class="perfil-drop">
+                  <li>
+                  <a href="#" class="perfil-drop-itens">
+                    <i class="fas fa-user"></i>
+                    Perfil
+                  </a>
+                  </li>
+                  <li>
+                  <a href="#" class="perfil-drop-itens">  
+                    <i class="fas fa-user-friends"></i>
+                    Recomendar
+                  </a>
+                  </li>
+                  <li>
+                  <a href="#" class="perfil-drop-itens">  
+                    <i class="fas fa-door-open"></i> 
+                    Sair
+                  </a>
+                  </li>
+                </ul>
               </li>
              </ul>
            </nav>  
