@@ -4,6 +4,7 @@
   position: relative;
   @media screen and (max-width:841px){
     margin: 0.5rem 0rem !important;
+    width: 155px;
   }
   cursor: pointer;
   &:last-child{
@@ -38,15 +39,32 @@
   top: 35px;
   right: 0;
   display: none;
+  @media screen and  (max-width:841px){
+    right: 5%;
+    top: 42px;
+  }
+  @media screen and (max-width: 759px) {
+    top: 32px;
+  }
+  li{
+    @media screen and  (max-width:841px){
+      padding: 0;
+    }
+  }
   .perfil-drop-itens{
     font-size: 14px;
     display: flex;
-    i{
-      margin-right: 5px;
-      color: $cinza-1;
-    }
+  @media screen and  (max-width:841px){
+    margin: 0.7rem;
+    padding: 0;
+  }
+  i{
+    margin-right: 5px;
+    color: $cinza-1;
+  }
   }
 }
+
 [data-dropdown].ativo .perfil-drop{
   display: block;
   animation: show-up .3s forwards;

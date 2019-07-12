@@ -1211,6 +1211,7 @@ footer p {
 @media screen and (max-width: 841px) {
   .perfil {
     margin: 0.5rem 0rem !important;
+    width: 155px;
   }
 }
 
@@ -1255,11 +1256,37 @@ footer p {
   display: none;
 }
 
+@media screen and (max-width: 841px) {
+  .perfil-drop {
+    right: 5%;
+    top: 42px;
+  }
+}
+
+@media screen and (max-width: 759px) {
+  .perfil-drop {
+    top: 32px;
+  }
+}
+
+@media screen and (max-width: 841px) {
+  .perfil-drop li {
+    padding: 0;
+  }
+}
+
 .perfil-drop .perfil-drop-itens {
   font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 841px) {
+  .perfil-drop .perfil-drop-itens {
+    margin: 0.7rem;
+    padding: 0;
+  }
 }
 
 .perfil-drop .perfil-drop-itens i {
