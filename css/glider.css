@@ -13,7 +13,7 @@
 .glider {
   margin: 0 auto;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   transform: translateZ(0);
